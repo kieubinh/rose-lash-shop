@@ -34,7 +34,13 @@ module.exports = async function handler(req,res){
   const html='<h2>New Rose appointment enquiry</h2><p>This is NOT a confirmed booking.</p><table>'+lines.map(([k,v])=>'<tr><th align="left">'+safe(k)+'</th><td>'+safe(v)+'</td></tr>').join('')+'</table>';
   try{
     const apiResponse=await fetch('https://api.resend.com/emails',{method:'POST',headers:{Authorization:'Bearer '+apiKey,'Content-Type':'application/json'},body:JSON.stringify({from,to:[to],reply_to:email,subject:'Rose booking enquiry — '+(found?found.name:'General'),html,text:'Rose appointment enquiry (not confirmed)\n\n'+lines.map(([k,v])=>k+': '+v).join('\n')})});
-    if(!apiResponse.ok)return respond(res,502,{error:'Email service unavailable. Please copy your enquiry instead.'});
+    if(!apiResponse.ok){
+      let errorKind='unknown';
+      try { const failure=await apiResponse.json(); errorKind=String(failure?.name||failure?.code||'unknown').slice(0,60); } catch {}
+      // Log only provider status/category, never customer details, email content or API key.
+      console.error('Rose booking: Resend rejected request', {status:apiResponse.status,kind:errorKind});
+      return respond(res,502,{error:'Email service unavailable. Please copy your enquiry instead.'});
+    }
     return respond(res,200,{sent:true,message:'Enquiry submitted; appointment subject to confirmation.'});
   }catch{return respond(res,502,{error:'Could not reach the email service. Please copy your enquiry instead.'});}
 };
