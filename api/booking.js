@@ -37,7 +37,7 @@ module.exports = async function handler(req,res){
     if(!apiResponse.ok){
       let errorKind='unknown';
       try { const failure=await apiResponse.json(); errorKind=String(failure?.name||failure?.code||'unknown').slice(0,60);
-        const reason=String(failure?.message||'').replace(/[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}/gi,'[email]').replace(/kieu\\.app/gi,'[domain]').slice(0,250);
+        const reason=String(failure?.message||'').replace(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/gi,'[email]').replace(/kieu\.app/gi,'[domain]').slice(0,250);
         console.error('Rose booking: provider explanation', {reason});
       } catch {}
       // Log only provider status/category, never customer details, email content or API key.
