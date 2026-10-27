@@ -3,6 +3,8 @@
 Source of design: user-supplied `rose-glass-v2.html`. The reference's salon photo, fonts, glass navigation, hero geometry, studio section, and booking panel are retained; the photo is extracted into `assets/rose-salon.jpg`.
 
 ## Implemented
+- Screenshot-inspired enhancements: hero value strip, clear Prices navigation, three featured service photo cards, aftercare callout, and an expanded contact/footer area. The original Rose V2 palette, typography, salon photograph, service menu, and enquiry flow remain in place.
+- Featured prices and durations are populated from the same 26-service menu used for booking. Reference mockup prices, contact information, and testimonials are not adopted because they were not verified for this salon.
 - Responsive single-page studio site preserving reference visual structure
 - 26 services, accurate prices, durations, two-week infill where applicable, and aftercare policies
 - Concept-only product edit (no confirmed products, prices, checkout or sales)
@@ -24,3 +26,6 @@ Repository: `kieubinh/rose-lash-shop`.
 
 ## Local checks
 `node --check app.js` and `node --check api/booking.js`; HTML structure can be checked using any HTML parser. Use Vercel Preview deployment for an end-to-end `/api/booking` test; it must not send when sender and recipient variables are missing.
+
+## Featured imagery
+The three featured treatment illustrations load from Pexels (photo IDs [7446923](https://www.pexels.com/photo/7446923), [6135621](https://www.pexels.com/photo/6135621), and [6763621](https://www.pexels.com/photo/6763621)), published as free-to-use stock images. They are **illustrative, not Rose client photos**, and a branded gradient fallback displays if they fail to load. Images are hosted by Pexels and subject to third-party availability.

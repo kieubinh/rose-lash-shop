@@ -28,6 +28,27 @@ for(const button of document.querySelectorAll('[data-category]'))button.addEvent
 for(const a of document.querySelectorAll('[data-jump-category]'))a.addEventListener('click',()=>selectCategory(a.dataset.jumpCategory));
 for(const svc of services){const option=document.createElement('option');option.value=svc.id;option.textContent=svc.name+' — $'+svc.price;serviceSelect.append(option);}
 selectCategory('Lashes');
+
+/* Featured treatments share the canonical service menu and prefill the booking enquiry. */
+for(const card of document.querySelectorAll('[data-featured-id]')){
+ const svc=services.find(item=>item.id===card.dataset.featuredId);
+ if(!svc)continue;
+ const price=card.querySelector('[data-featured-price]');
+ const duration=card.querySelector('[data-featured-duration]');
+ if(price)price.textContent='$'+svc.price;
+ if(duration)duration.textContent=svc.duration;
+}
+for(const link of document.querySelectorAll('[data-book-service]')){
+ link.addEventListener('click',()=>{
+  const svc=services.find(item=>item.id===link.dataset.bookService);
+  if(svc)serviceSelect.value=svc.id;
+ });
+}
+for(const image of document.querySelectorAll('.featured-image img')){
+ image.addEventListener('error',()=>image.classList.add('is-unavailable'));
+ if(image.complete&&!image.naturalWidth)image.classList.add('is-unavailable');
+}
+
 const date=document.getElementById('booking-date');const now=new Date();date.min=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
 function payload(){const f=new FormData(form);return Object.fromEntries(['name','phone','email','service','date','time','notes','website'].map(key=>[key,String(f.get(key)||'').trim()]));}
 function textEnquiry(d){const found=services.find(x=>x.id===d.service);return ['Rose Lash · Brow · Wax — appointment enquiry','','Name: '+d.name,'Email: '+d.email,'Phone: '+(d.phone||'Not provided'),'Treatment: '+(found?found.name:'Not sure yet'),'Preferred date: '+(d.date||'Flexible'),'Preferred time: '+(d.time||'Flexible'),'Notes: '+(d.notes||'None'),'','Please confirm the time, location, total cost and booking details. This is not a confirmed appointment.'].join('\n');}
