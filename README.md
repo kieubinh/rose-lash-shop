@@ -32,3 +32,12 @@ The three featured treatment illustrations load from Pexels (photo IDs [7446923]
 
 ## Rose Edit product concept showcase
 The design-reference catalogue currently includes Lash cleanser (A$22), Soft lash brush (A$12), Lash care kit (A$38), and Brow styling edit (A$20). The illustrations in `assets/rose-lash-*.svg` and `assets/rose-brow-gel.svg` are original concept artwork constructed for the site, **not photos of physical stock**. All cards and the detail dialog explicitly disclose illustrative pricing, unconfirmed product specifications and lack of purchasing capability. Before selling, verify the physical products, ingredients/materials, local product and consumer-law obligations, inventory, final descriptions and prices, and add a supported checkout. Do not assume the reference's implied product claims have been validated.
+
+## 2026 salon-first homepage redesign
+- Redesign inspired by the supplied luxury Rose homepage mockup, while keeping the original brand palette and production enquiry workflow.
+- Owner/artist portrait and profile card are explicitly excluded from the page, per the latest design decision.
+- A brighter studio-led hero, image-backed service category banners, four trust/value labels, three highlighted treatments, and a booking enquiry panel share the upper page.
+- Studio atmosphere panel replaces the owner biography; the existing `assets/rose-salon.jpg` image remains in use until a separately reviewed authentic studio image is available in the repository.
+- 26 exact service prices and durations, four conceptual Rose Edit products, and the server-side email booking route remain unchanged.
+- Do not copy the example's invented business address, testimonials, owners' names or prices into production.
+- Validate using `python tests/test_portrait_free_homepage.py`, `python tests/test_visual_source.py`, `python tests/check_data.py`, `node --check app.js`, and `node --test tests/test_booking.cjs`.
