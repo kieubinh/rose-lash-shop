@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="660" viewBox="0 0 760 660" role="img" aria-label="Rose clear brow gel styling product conceptual illustration"><title>Rose clear brow gel styling product conceptual illustration</title><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e9c3c0"/><stop offset=".55" stop-color="#dbaba9"/><stop offset="1" stop-color="#b9757f"/></linearGradient>
+<radialGradient id="glow" cx=".24" cy=".1" r=".84"><stop stop-color="#fff8f4" stop-opacity=".85"/><stop offset="1" stop-color="#fff8f4" stop-opacity="0"/></radialGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2=".18"><stop stop-color="#fffaf7" stop-opacity=".94"/><stop offset=".25" stop-color="#fffaf7" stop-opacity=".48"/><stop offset=".75" stop-color="#ffebeb" stop-opacity=".58"/><stop offset="1" stop-color="#fff" stop-opacity=".86"/></linearGradient>
+<linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9e2dc"/><stop offset=".38" stop-color="#dca09d"/><stop offset=".7" stop-color="#e8b7b0"/><stop offset="1" stop-color="#ac6b70"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2=".15"><stop stop-color="#7d3c48"/><stop offset=".17" stop-color="#edc1b7"/><stop offset=".45" stop-color="#bb7880"/><stop offset=".68" stop-color="#ffe7da"/><stop offset="1" stop-color="#86505b"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff9f2"/><stop offset=".75" stop-color="#f7dfd4"/><stop offset="1" stop-color="#d29f96"/></linearGradient>
+<filter id="shadow" x="-40%" y="-40%" width="180%" height="200%"><feGaussianBlur stdDeviation="25"/></filter>
+<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+<filter id="object" x="-35%" y="-35%" width="170%" height="180%"><feDropShadow dx="17" dy="25" stdDeviation="15" flood-color="#5b2936" flood-opacity=".31"/></filter>
+</defs><rect width="760" height="660" fill="url(#bg)"/><rect width="760" height="660" fill="url(#glow)"/>
+<g opacity=".14" stroke="#fff2e9" stroke-width="14"><path d="M590 54V268 M483 161H698 M512 84L670 238 M670 84L512 238"/></g>
+<path d="M0 569C153 540 273 590 431 555S644 535 760 558V660H0Z" fill="#fcf4ee" opacity=".21"/>
+<ellipse cx="389" cy="585" rx="230" ry="34" fill="#6b3644" opacity=".27" filter="url(#shadow)"/>
+<g opacity=".34" fill="#f9eadf"><ellipse cx="453" cy="561" rx="218" ry="46"/><ellipse cx="453" cy="545" rx="166" ry="25" fill="#fffaf2"/></g>
+<g filter="url(#object)">
+<rect x="268" y="248" width="135" height="302" rx="23" fill="url(#glass)" stroke="#fff6f1" stroke-width="4"/>
+<rect x="279" y="269" width="112" height="264" rx="14" fill="#edd0ca" opacity=".38"/>
+<rect x="266" y="209" width="138" height="64" rx="10" fill="url(#metal)" stroke="#ffede1" stroke-width="4"/>
+<rect x="291" y="224" width="19" height="35" rx="6" fill="#fff0e8" opacity=".53"/>
+<rect x="459" y="426" width="73" height="132" rx="18" fill="url(#metal)"/>
+<path d="M495 435V203" fill="none" stroke="#502c34" stroke-width="11" stroke-linecap="round"/>
+<rect x="476" y="135" width="39" height="98" rx="19" fill="#34272b"/>
+<g stroke="#241c21" stroke-width="3.8" stroke-linecap="round"><path d="M495 142l34 9"/><path d="M495 147.25l-34 -9"/><path d="M495 152.5l34 9"/><path d="M495 157.75l-34 -9"/><path d="M495 163l34 9"/><path d="M495 168.25l-34 -9"/><path d="M495 173.5l34 9"/><path d="M495 178.75l-34 -9"/><path d="M495 184l34 9"/><path d="M495 189.25l-34 -9"/><path d="M495 194.5l34 9"/><path d="M495 199.75l-34 -9"/><path d="M495 205l34 9"/><path d="M495 210.25l-34 -9"/><path d="M495 215.5l34 9"/><path d="M495 220.75l-34 -9"/><path d="M495 226l34 9"/></g>
+<text x="338" y="392" text-anchor="middle" font-family="Georgia,serif" font-size="54" font-style="italic" fill="#894b57">Rose</text><text x="338" y="418" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="4" fill="#9c6069">BROW GEL</text>
+</g>
+<g opacity=".32"><path d="M104 550Q180 461 235 493" fill="none" stroke="#fff1ed" stroke-width="20" stroke-linecap="round"/></g></svg>
