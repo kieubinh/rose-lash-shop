@@ -285,7 +285,7 @@
 @media(prefers-reduced-motion:reduce){#rose-v2 .shop-card,#rose-v2 .shop-picture img,#rose-v2 .shop-detail{transition:none}}
 /* 2026 Rose authentic homepage — screenshot-inspired, without fabricated social proof. */
 #rose-v2{--rose-dark:#432630;--rose-light:#fdf4ee;color:#452d35;background:#fcf4ee}
-#rose-v2 .hero{min-height:675px;overflow:visible;color:#3c222b;background:linear-gradient(88deg,rgba(255,249,246,.94) 0%,rgba(255,238,231,.87) 39%,rgba(233,185,173,.54) 100%),url('/assets/rose-studio.jpg') center 42% / cover}
+#rose-v2 .hero{min-height:675px;overflow:visible;color:#3c222b;background:linear-gradient(88deg,rgba(255,249,246,.94) 0%,rgba(255,238,231,.87) 39%,rgba(233,185,173,.54) 100%),url('/assets/rose-salon.jpg') center 42% / cover}
 #rose-v2 .hero::before{width:52%;height:85%;background:radial-gradient(circle,rgba(255,255,255,.35),transparent 66%);pointer-events:none}
 #rose-v2 .topnav{width:100%;max-width:none;min-height:80px;margin:0;padding:12px max(4%,calc((100vw - 1300px)/2));border:0;border-bottom:1px solid rgba(162,94,99,.14);border-radius:0;background:rgba(255,250,247,.89);box-shadow:0 4px 20px rgba(92,42,50,.06);backdrop-filter:blur(20px);gap:20px}
 #rose-v2 .topnav .logo{font:italic 47px/.77 Georgia,serif;letter-spacing:-3px;color:#914651;position:relative;padding-left:32px}
