@@ -13,6 +13,12 @@ assert (root/'assets/rose-salon.jpg').read_bytes()[:3]==b'\xff\xd8\xff'
 services=json.loads((root/'data/services.json').read_text()); assert len(services)==26
 assert len({x['id'] for x in services})==26
 assert all(x['price']>0 for x in services)
+assert next(x for x in services if x['id']=='lash-design-light')['name']=='Natural Design Lashes'
+assert next(x for x in services if x['id']=='lash-design-max')['name']=='Luxury Design Lashes'
+app_source=(root/'app.js').read_text()
+assert '"name":"Natural Design Lashes"' in app_source
+assert '"name":"Luxury Design Lashes"' in app_source
+assert 'Natural Design and Luxury Design are new-set only.' in app_source
 service_by_id={x['id']:x for x in services}
 featured=soup.select('#featured .featured-card')
 assert len(featured)==3
