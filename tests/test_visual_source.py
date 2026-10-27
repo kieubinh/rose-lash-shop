@@ -33,4 +33,35 @@ assert soup.select_one('.mobile-nav a[href="#price-list"]')
 assert soup.select_one('footer#contact .footer-book[href="#booking"]')
 assert soup.select_one('nav.navlinks a[href="#price-list"]')
 assert "data-book-service" in (root/'app.js').read_text()
-print('Rose V2 design, featured prices, booking and 26 services: PASS')
+
+# The Rose Edit product showcase is illustrative: check the 4 products, image assets,
+# price labels, working detail controls and explicit no-checkout messaging.
+products=[
+ ('lash-cleanser','Lash cleanser','22','rose-lash-cleanser.svg'),
+ ('lash-brush','Soft lash brush','12','rose-lash-brush.svg'),
+ ('lash-care-kit','Lash care kit','38','rose-lash-care-kit.svg'),
+ ('brow-styling','Brow styling edit','20','rose-brow-gel.svg')
+]
+cards=soup.select('#shop .shop-card')
+assert len(cards)==4
+assert len(soup.select('#shop .shop-perks>div'))==4
+for identifier,name,price,art in products:
+    card=soup.select_one(f'[data-shop-product="{identifier}"]')
+    assert card is not None
+    assert card.select_one('h3').get_text(strip=True)==name
+    assert card.select_one('.shop-pricing strong').get_text(strip=True)==f'A${price}'
+    assert card.select_one('button[data-product-id]')['data-product-id']==identifier
+    image=card.select_one('img')
+    assert image.get('src')=='/assets/'+art
+    assert image.get('alt')
+    raw=(root/'assets'/art).read_text()
+    assert raw.startswith('<svg') and '<title>' in raw and '</svg>' in raw
+assert soup.select_one('dialog#rose-product-dialog[aria-labelledby="rose-product-title"]')
+assert soup.select_one('#rose-product-close')
+assert soup.select_one('#rose-product-highlights')
+shop_notice=soup.select_one('#shop .shop-info').get_text(' ',strip=True)
+assert 'not confirmed' in shop_notice and 'No purchases or payments' in shop_notice
+assert 'productDialog.showModal()' in app_source
+assert 'roseEditProducts' in app_source
+
+print('Rose V2 design, featured prices, four product concepts, booking and 26 services: PASS')

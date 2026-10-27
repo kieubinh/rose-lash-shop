@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="660" viewBox="0 0 760 660" role="img" aria-label="Rose soft lash brush and beauty tools conceptual product illustration"><title>Rose soft lash brush and beauty tools conceptual product illustration</title><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e9c3c0"/><stop offset=".55" stop-color="#dbaba9"/><stop offset="1" stop-color="#b9757f"/></linearGradient>
+<radialGradient id="glow" cx=".24" cy=".1" r=".84"><stop stop-color="#fff8f4" stop-opacity=".85"/><stop offset="1" stop-color="#fff8f4" stop-opacity="0"/></radialGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2=".18"><stop stop-color="#fffaf7" stop-opacity=".94"/><stop offset=".25" stop-color="#fffaf7" stop-opacity=".48"/><stop offset=".75" stop-color="#ffebeb" stop-opacity=".58"/><stop offset="1" stop-color="#fff" stop-opacity=".86"/></linearGradient>
+<linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9e2dc"/><stop offset=".38" stop-color="#dca09d"/><stop offset=".7" stop-color="#e8b7b0"/><stop offset="1" stop-color="#ac6b70"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2=".15"><stop stop-color="#7d3c48"/><stop offset=".17" stop-color="#edc1b7"/><stop offset=".45" stop-color="#bb7880"/><stop offset=".68" stop-color="#ffe7da"/><stop offset="1" stop-color="#86505b"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff9f2"/><stop offset=".75" stop-color="#f7dfd4"/><stop offset="1" stop-color="#d29f96"/></linearGradient>
+<filter id="shadow" x="-40%" y="-40%" width="180%" height="200%"><feGaussianBlur stdDeviation="25"/></filter>
+<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+<filter id="object" x="-35%" y="-35%" width="170%" height="180%"><feDropShadow dx="17" dy="25" stdDeviation="15" flood-color="#5b2936" flood-opacity=".31"/></filter>
+</defs><rect width="760" height="660" fill="url(#bg)"/><rect width="760" height="660" fill="url(#glow)"/>
+<g opacity=".14" stroke="#fff2e9" stroke-width="14"><path d="M590 54V268 M483 161H698 M512 84L670 238 M670 84L512 238"/></g>
+<path d="M0 569C153 540 273 590 431 555S644 535 760 558V660H0Z" fill="#fcf4ee" opacity=".21"/>
+<ellipse cx="389" cy="585" rx="230" ry="34" fill="#6b3644" opacity=".27" filter="url(#shadow)"/>
+<g filter="url(#object)">
+<rect x="170" y="181" width="98" height="381" rx="24" fill="url(#metal)"/>
+<rect x="187" y="192" width="15" height="340" rx="7" fill="#fff3ec" opacity=".43"/>
+<path d="M174 269H264" stroke="#f4d3ce" opacity=".65" stroke-width="4"/>
+<g transform="translate(343 0)"><rect x="12" y="343" width="58" height="219" rx="19" fill="url(#metal)"/><path d="M4 335Q-10 299 9 239Q21 186 41 167Q70 185 84 236Q103 305 76 340Z" fill="url(#cream)" stroke="#f8dcd5" stroke-width="4"/><path d="M40 173Q35 278 35 332" fill="none" stroke="#fff" opacity=".56" stroke-width="11"/></g>
+<rect x="559" y="314" width="17" height="251" rx="8" fill="url(#metal)"/>
+<rect x="549" y="212" width="37" height="114" rx="15" fill="#5e3340"/>
+<g stroke="#6e3e48" stroke-width="4.3" stroke-linecap="round"><path d="M567 220l24 8"/><path d="M567 225.8l-25 -7"/><path d="M567 231.6l24 8"/><path d="M567 237.4l-25 -7"/><path d="M567 243.2l24 8"/><path d="M567 249l-25 -7"/><path d="M567 254.8l24 8"/><path d="M567 260.6l-25 -7"/><path d="M567 266.4l24 8"/><path d="M567 272.2l-25 -7"/><path d="M567 278l24 8"/><path d="M567 283.8l-25 -7"/><path d="M567 289.6l24 8"/><path d="M567 295.4l-25 -7"/><path d="M567 301.2l24 8"/><path d="M567 307l-25 -7"/><path d="M567 312.8l24 8"/><path d="M567 318.6l-25 -7"/></g>
+</g>
+<g transform="translate(0 0) rotate(-90 220 380)"><text x="220" y="390" text-anchor="middle" font-family="Georgia,serif" font-size="54" font-style="italic" fill="#894b57">Rose</text></g>
+<path d="M80 590Q380 571 699 598" fill="none" stroke="#fff3ed" stroke-width="6" opacity=".33"/></svg>

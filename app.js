@@ -63,3 +63,48 @@ form.addEventListener('submit',async (e)=>{e.preventDefault();if(!form.reportVal
  }catch{showStatus('Your enquiry has not been sent due to a network issue. Use “Copy details” instead.','error');}
  finally{submitButton.disabled=false;}
 });
+
+/* Rose Edit concept details. These are mockups, not inventory or a checkout. */
+const roseEditProducts=[
+ {id:'lash-cleanser',name:'Lash cleanser',price:22,image:'/assets/rose-lash-cleanser.svg',alt:'Rose concept lash cleanser bottle',description:'A gentle foaming cleanser concept to complement a daily lash-care routine.',highlights:['Concept: lash-friendly daily cleansing ritual','Illustrated Rose-branded foaming pump packaging','Formula, ingredients and directions are not finalised']},
+ {id:'lash-brush',name:'Soft lash brush',price:12,image:'/assets/rose-lash-brush.svg',alt:'Rose concept lash brush tools',description:'A soft cleansing brush and spoolie concept for carefully grooming lashes.',highlights:['Concept: soft cleansing brush and spoolie','Rose-gold inspired reusable beauty-tool design','Materials and final product configuration are unconfirmed']},
+ {id:'lash-care-kit',name:'Lash care kit',price:38,image:'/assets/rose-lash-care-kit.svg',alt:'Rose concept lash care gift kit',description:'An elegant Rose-inspired gift set for the little moments of lash aftercare.',highlights:['Concept: cleansing and grooming essentials in a gift box','Designed in the Rose blush-pink palette','Kit contents, packaging and availability are subject to confirmation']},
+ {id:'brow-styling',name:'Brow styling edit',price:20,image:'/assets/rose-brow-gel.svg',alt:'Rose concept brow gel',description:'A clear brow styling gel concept for a neat, naturally defined finish.',highlights:['Concept: clear brow gel with spoolie applicator','Rose-inspired glass and rose-gold presentation','Ingredients, suitability and final use instructions are unconfirmed']}
+];
+const productDialog=document.getElementById('rose-product-dialog');
+let lastProductTrigger=null;
+if(productDialog&&typeof productDialog.showModal==='function'){
+ const title=productDialog.querySelector('#rose-product-title');
+ const description=productDialog.querySelector('#rose-product-description');
+ const price=productDialog.querySelector('#rose-product-price');
+ const image=productDialog.querySelector('#rose-product-image');
+ const highlights=productDialog.querySelector('#rose-product-highlights');
+ const closeProduct=()=>productDialog.close();
+ for(const trigger of document.querySelectorAll('[data-product-id]')){
+  trigger.addEventListener('click',()=>{
+   const product=roseEditProducts.find(item=>item.id===trigger.dataset.productId);
+   if(!product)return;
+   title.textContent=product.name;
+   description.textContent=product.description;
+   price.replaceChildren(document.createTextNode('A$'+product.price));
+   const priceNote=elt('small',null,'Illustrative price · not for purchase');
+   price.append(priceNote);
+   image.src=product.image;
+   image.alt=product.alt;
+   const bullets=document.createElement('ul');
+   for(const point of product.highlights)bullets.append(elt('li',null,point));
+   highlights.replaceChildren(bullets);
+   lastProductTrigger=trigger;
+   productDialog.showModal();
+   productDialog.querySelector('#rose-product-close').focus();
+  });
+ }
+ productDialog.querySelector('#rose-product-close').addEventListener('click',closeProduct);
+ productDialog.querySelector('#rose-product-done').addEventListener('click',closeProduct);
+ productDialog.addEventListener('click',event=>{
+  if(event.target!==productDialog)return;
+  const bounds=productDialog.getBoundingClientRect();
+  if(event.clientX<bounds.left||event.clientX>bounds.right||event.clientY<bounds.top||event.clientY>bounds.bottom)closeProduct();
+ });
+ productDialog.addEventListener('close',()=>{if(lastProductTrigger)lastProductTrigger.focus();});
+}
