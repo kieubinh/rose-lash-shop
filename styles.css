@@ -395,3 +395,30 @@
 @media(max-width:900px){#rose-v2 .topnav .navlinks{display:none}#rose-v2 .mobile-nav{margin-top:0;position:relative;z-index:3;background:rgba(255,250,245,.93)}#rose-v2 .hero{min-height:auto;padding-bottom:22px}#rose-v2 .hero-body{min-height:430px;padding:25px 0}#rose-v2 .artist-frame{width:38%;height:330px}#rose-v2 .hero-copy{width:60%}#rose-v2 .hero h1{font-size:clamp(60px,9vw,85px)}#rose-v2 .hero-ribbon{transform:translateY(18px)}#rose-v2 .hero-ribbon a{min-height:112px;padding-left:35%;padding-right:8px}#rose-v2 .hero-ribbon strong{font-size:25px}#rose-v2 .home-trust{grid-template-columns:1fr}#rose-v2 .trust-artist img{width:30%}}
 @media(max-width:640px){#rose-v2 .topnav{padding:11px 17px}#rose-v2 .topnav .logo{font-size:35px;padding-left:28px}#rose-v2 .topnav .logo:before{font-size:30px}#rose-v2 .hero{background-position:center}#rose-v2 .hero-body{flex-direction:column;gap:12px;align-items:start;padding-top:35px}#rose-v2 .hero-copy{width:100%;max-width:none}#rose-v2 .hero h1{font-size:clamp(60px,14vw,80px);margin-top:15px}#rose-v2 .hero-copy p{max-width:350px;font-size:14px}#rose-v2 .hero-values{display:flex;flex-wrap:wrap;gap:10px}#rose-v2 .hero-values li{font-size:8px}#rose-v2 .artist-frame{align-self:center;width:min(75%,300px);height:265px;border-radius:125px 125px 12px 12px}#rose-v2 .artist-frame img{object-position:center 30%}#rose-v2 .artist-frame figcaption{padding:8px 12px}#rose-v2 .artist-frame figcaption strong{font-size:16px}#rose-v2 .hero-ribbon{grid-template-columns:1fr;gap:8px;transform:translateY(0);margin-top:15px}#rose-v2 .hero-ribbon a{min-height:92px;padding-left:43%;border-width:2px}#rose-v2 .hero-ribbon a+a{border-left-width:2px}#rose-v2 .treatments{padding:34px 0 0}#rose-v2 .treatments .section-head{display:block}#rose-v2 .treatments .section-head h2{font-size:31px}#rose-v2 .treatment-grid{grid-template-columns:1fr}#rose-v2 .treatment-card{min-height:120px;padding:17px 20px}#rose-v2 .home-showcase-grid{width:calc(100% - 25px);margin-top:17px;gap:14px}#rose-v2 .home-showcase-grid .featured{padding:20px 14px}#rose-v2 .home-showcase-grid .featured-heading{display:block}#rose-v2 .home-showcase-grid .featured-all{margin-top:12px}#rose-v2 .home-showcase-grid .featured-grid{grid-template-columns:1fr}#rose-v2 .home-showcase-grid .featured-card{display:grid;grid-template-columns:39% 61%}#rose-v2 .home-showcase-grid .featured-image{height:100%;min-height:145px}#rose-v2 .home-showcase-grid .featured-content{padding:14px}#rose-v2 .home-showcase-grid .featured-action{flex-direction:row;align-items:end}#rose-v2 .home-showcase-grid .featured-action>a{width:auto}#rose-v2 .home-showcase-grid .care-note a{margin-left:0}#rose-v2 .home-showcase-grid .booking{padding:21px 15px}#rose-v2 .home-showcase-grid .form-grid{grid-template-columns:1fr}#rose-v2 .home-trust{width:calc(100% - 25px)}#rose-v2 .trust-studio{display:block}#rose-v2 .trust-studio-copy{padding:20px}#rose-v2 .trust-studio img{width:100%;height:245px;display:block}#rose-v2 .trust-artist{min-height:240px}#rose-v2 .trust-artist img{width:39%}#rose-v2 .trust-artist>div{padding:16px;gap:8px}#rose-v2 .trust-artist h2{font-size:26px}#rose-v2 .trust-artist p{font-size:11px}#rose-v2 .menu-section{padding:45px 0 65px}#rose-v2 .studio{grid-template-columns:1fr}#rose-v2 .studio-image{min-height:360px}}
 @media(prefers-reduced-motion:reduce){#rose-v2 .hero-ribbon a{transition:none}}
+
+
+/* Portrait-free release: customer-approved, salon-first page. */
+#rose-v2 .hero{background-image:linear-gradient(90deg,rgba(255,249,246,.95) 0%,rgba(255,239,232,.79) 40%,rgba(244,199,188,.30) 100%),url('/assets/rose-salon.jpg');background-size:cover;background-position:center 48%}
+#rose-v2 .hero-copy{width:100%;max-width:740px}
+#rose-v2 .hero-body{justify-content:flex-start;min-height:465px}
+#rose-v2 .hero h1{max-width:670px}
+#rose-v2 .hero-copy p{max-width:495px}
+#rose-v2 .hero-values{grid-template-columns:repeat(4,auto);gap:13px}
+#rose-v2 .hero-ribbon{margin-bottom:6px}
+#rose-v2 .home-trust{grid-template-columns:1fr}
+#rose-v2 .trust-studio{grid-column:1/-1;min-height:290px}
+#rose-v2 .trust-studio-copy{flex-basis:47%;padding:36px clamp(25px,5vw,70px)}
+#rose-v2 .trust-studio img{width:53%;max-height:375px;object-position:center}
+#rose-v2 .studio-image{background-image:url('/assets/rose-salon.jpg')}
+#rose-v2 .artist-frame,#rose-v2 .trust-artist{display:none!important}
+@media(max-width:900px){#rose-v2 .hero-body{min-height:450px}#rose-v2 .hero-copy{width:100%}}
+@media(max-width:640px){
+#rose-v2 .hero{background-position:center center;background-image:linear-gradient(90deg,rgba(255,249,246,.96),rgba(255,238,231,.80)),url('/assets/rose-salon.jpg')}
+#rose-v2 .hero-body{min-height:auto;padding:48px 0 33px}
+#rose-v2 .hero-copy{max-width:100%}
+#rose-v2 .hero-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+#rose-v2 .hero-ribbon{margin-bottom:0}
+#rose-v2 .trust-studio{display:flex;flex-direction:column}
+#rose-v2 .trust-studio-copy{flex-basis:auto;width:100%}
+#rose-v2 .trust-studio img{height:245px;width:100%;max-height:none}
+}
