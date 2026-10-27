@@ -25,6 +25,22 @@ for url_path, path in paths.items():
     assert len(ld_nodes) >= 1, path
     graphs = [json.loads(x.get_text()) for x in ld_nodes]
     assert all(x["@context"] == "https://schema.org" for x in graphs), path
+
+    assert "Sydney" in soup.title.get_text(), path
+    assert "Sydney" in soup.find("meta", attrs={"name": "description"}).get("content"), path
+    assert "Sydney" in soup.get_text(" ", strip=True), path
+    if url_path == "/":
+        org = next(node for graph in graphs for node in graph["@graph"] if node.get("@type") == "BeautySalon")
+        assert org["address"] == {
+            "@type": "PostalAddress",
+            "addressLocality": "Sydney",
+            "addressRegion": "NSW",
+            "addressCountry": "AU",
+        }
+        assert org["areaServed"]["name"] == "Sydney"
+        assert "streetAddress" not in org["address"] and "postalCode" not in org["address"]
+        assert "telephone" not in org and "openingHours" not in org and "aggregateRating" not in org
+
     assert not any(field in str(graphs) for field in ('fake address', 'fake reviews')), path
     if url_path != "/":
         category = url_path.strip("/")
