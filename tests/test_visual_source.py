@@ -64,4 +64,12 @@ assert 'not confirmed' in shop_notice and 'No purchases or payments' in shop_not
 assert 'productDialog.showModal()' in app_source
 assert 'roseEditProducts' in app_source
 
+# The submitted Rose wordmark must appear in header and footer.
+logos=soup.select('a.logo-official img[src="/assets/rose-official-logo.avif"]')
+assert len(logos)==2
+assert all(img.get('alt')=='Rose Lash Brow Wax' for img in logos)
+logo=(root/'assets/rose-official-logo.avif').read_bytes()
+assert logo[4:12]==b'ftypavif'
+assert len(logo)<20_000
+
 print('Rose V2 design, featured prices, four product concepts, booking and 26 services: PASS')
