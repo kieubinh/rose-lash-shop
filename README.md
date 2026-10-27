@@ -84,3 +84,13 @@ Implemented without changing the logo, salon imagery, 26 service prices, booking
 5. Run PageSpeed Insights and Rich Results Test on the live production domain. Validation and Search Console submission require access beyond deploying source code.
 
 Note: Vercel production readiness confirms deployment, not Google indexation, a Lighthouse score or measured organic traffic.
+
+## Rose Store V7 — product enquiries, not paid orders (27 October 2026)
+
+- Eight suggested Rose-branded products in `data/products.json`, all explicitly concept-only until physical product, ingredient/material labelling, retail price, stock and fulfilment have been verified. The four existing illustration SVGs are still artwork, not verified goods. Four additional cards are honestly illustrated as idea placeholders.
+- `rose-store.js` appends the additional previews and implements an accessible native-dialog bag with quantities, local-only persistence, indicative totals, studio collection or Australian delivery-quote preference, and an email availability-enquiry form.
+- `/api/order` validates all IDs, quantities and prices against the authoritative server catalogue, never trusts client-submitted prices, and sends only with existing verified Resend configuration. No customer credit-card or payment data is accepted. No inventory or order is confirmed and there is no payment integration.
+- The existing 26 services, enquiry booking flow, official logo, palette, studio imagery and four pre-existing concept cards remain untouched.
+- Verify `RESEND_API_KEY`, `ROSE_BOOKING_FROM_EMAIL`, `ROSE_BOOKING_TO_EMAIL` are set (already used by bookings). The new endpoint intentionally fails closed otherwise.
+- **Before activating real sales:** confirm suppliers, actual goods/packaging and labels, product safety and Australian requirements, final prices incl GST as applicable, stock/SKUs, ABN/contact details, delivery and returns policies; then add a secure Stripe Checkout or Shopify checkout with stock/order persistence, signed payment webhooks and fulfilment notifications. Do not call these enquiries paid or confirmed sales.
+- Run `node --check rose-store.js`, `node --check api/order.js`, `node --test tests/test_store.cjs` and prior regressions.
