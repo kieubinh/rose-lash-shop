@@ -7,7 +7,7 @@ Source of design: user-supplied `rose-glass-v2.html`. The reference's salon phot
 - Featured prices and durations are populated from the same 26-service menu used for booking. Reference mockup prices, contact information, and testimonials are not adopted because they were not verified for this salon.
 - Responsive single-page studio site preserving reference visual structure
 - 26 services, accurate prices, durations, two-week infill where applicable, and aftercare policies
-- Concept-only product edit (no confirmed products, prices, checkout or sales)
+- Four Rose Edit concept products shown with locally hosted Rose-branded SVG illustrations, design-reference A$22/A$12/A$38/A$20 indicative prices, responsive cards, and accessible View Details dialog. These are **not verified sale prices**, and no inventory or checkout is active.
 - Booking enquiry form with accessible validation, honeypot, copy fallback, and secure `/api/booking` Vercel endpoint
 - No actual booking confirmation until the studio replies
 
@@ -29,3 +29,6 @@ Repository: `kieubinh/rose-lash-shop`.
 
 ## Featured imagery
 The three featured treatment illustrations load from Pexels (photo IDs [7446923](https://www.pexels.com/photo/7446923), [6135621](https://www.pexels.com/photo/6135621), and [6763621](https://www.pexels.com/photo/6763621)), published as free-to-use stock images. They are **illustrative, not Rose client photos**, and a branded gradient fallback displays if they fail to load. Images are hosted by Pexels and subject to third-party availability.
+
+## Rose Edit product concept showcase
+The design-reference catalogue currently includes Lash cleanser (A$22), Soft lash brush (A$12), Lash care kit (A$38), and Brow styling edit (A$20). The illustrations in `assets/rose-lash-*.svg` and `assets/rose-brow-gel.svg` are original concept artwork constructed for the site, **not photos of physical stock**. All cards and the detail dialog explicitly disclose illustrative pricing, unconfirmed product specifications and lack of purchasing capability. Before selling, verify the physical products, ingredients/materials, local product and consumer-law obligations, inventory, final descriptions and prices, and add a supported checkout. Do not assume the reference's implied product claims have been validated.
