@@ -50,3 +50,8 @@ The design-reference catalogue currently includes Lash cleanser (A$22), Soft las
 - The four Rose Edit catalogue items remain expressly **concept-only** and are not included in product/merchant structured data or the sitemap.
 - Add a genuine canonical custom domain later if available; update metadata, schema URLs, internal sitemap URLs and Search Console together, and permanently redirect the old host.
 - Run `python tests/test_seo.py` to check the SEO data, schema syntax, indexability, and service menu. Google indexing/placement and Core Web Vitals require checks from Google Search Console and PageSpeed Insights; SEO markup alone does not guarantee either.
+
+### Sydney local SEO
+- Confirmed geographic targeting is **Sydney, NSW, Australia**. The homepage and three service landing pages now have Sydney-focused titles, descriptions, headings/visible copy and updated structured data.
+- The homepage entity is a `BeautySalon` with only confirmed city, region and country in its `PostalAddress` plus Sydney `areaServed`; **no street address, suburb, postcode, phone, opening hours or reviews** have been invented.
+- To complete local search setup, verify the actual street address/suburb or service-area setup, contact details, business hours, and Google Business Profile ownership before publishing more granular location data.
