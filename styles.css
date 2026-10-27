@@ -283,3 +283,142 @@
 @media(max-width:950px){#rose-v2 .shop-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#rose-v2 .shop-perks{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}#rose-v2 .shop-perks>div:nth-child(3){border-left:0}}
 @media(max-width:640px){#rose-v2 .shop-section{padding:68px 0}#rose-v2 .shop-hero h2{font-size:clamp(49px,13vw,64px)}#rose-v2 .shop-grid{grid-template-columns:1fr}#rose-v2 .shop-picture{aspect-ratio:1.25}#rose-v2 .shop-copy{padding:22px 24px}#rose-v2 .shop-copy>p{min-height:0}#rose-v2 .shop-pricing{margin-top:2px}#rose-v2 .shop-perks{padding:18px 12px;gap:20px 0}#rose-v2 .shop-perks>div{gap:8px;padding:0 8px}#rose-v2 .shop-perk-icon{width:36px;height:36px;font-size:22px}#rose-v2 .shop-perks strong{font-size:14px}#rose-v2 .shop-perks small{font-size:9px}#rose-v2 .product-modal-content{grid-template-columns:1fr}#rose-v2 .product-modal-image img{height:190px;min-height:0;object-position:center 53%}#rose-v2 .product-modal-copy{padding:35px 23px 23px}#rose-v2 .product-modal-copy h2{font-size:36px}#rose-v2 .product-dialog{max-height:92vh}}
 @media(prefers-reduced-motion:reduce){#rose-v2 .shop-card,#rose-v2 .shop-picture img,#rose-v2 .shop-detail{transition:none}}
+/* 2026 Rose authentic homepage — screenshot-inspired, without fabricated social proof. */
+#rose-v2{--rose-dark:#432630;--rose-light:#fdf4ee;color:#452d35;background:#fcf4ee}
+#rose-v2 .hero{min-height:675px;overflow:visible;color:#3c222b;background:linear-gradient(88deg,rgba(255,249,246,.94) 0%,rgba(255,238,231,.87) 39%,rgba(233,185,173,.54) 100%),url('/assets/rose-salon.jpg') center 42% / cover}
+#rose-v2 .hero::before{width:52%;height:85%;background:radial-gradient(circle,rgba(255,255,255,.35),transparent 66%);pointer-events:none}
+#rose-v2 .topnav{width:100%;max-width:none;min-height:80px;margin:0;padding:12px max(4%,calc((100vw - 1300px)/2));border:0;border-bottom:1px solid rgba(162,94,99,.14);border-radius:0;background:rgba(255,250,247,.89);box-shadow:0 4px 20px rgba(92,42,50,.06);backdrop-filter:blur(20px);gap:20px}
+#rose-v2 .topnav .logo{font:italic 47px/.77 Georgia,serif;letter-spacing:-3px;color:#914651;position:relative;padding-left:32px}
+#rose-v2 .topnav .logo:before{content:'✿';font:normal 36px Georgia,serif;color:#bd7c86;position:absolute;left:0;top:-9px}
+#rose-v2 .topnav .logo small{color:#7a5557;font:7px Arial,sans-serif;letter-spacing:.28em;margin-top:11px}
+#rose-v2 .navlinks{gap:clamp(12px,2vw,26px)}
+#rose-v2 .navlinks a{font-size:11px;text-transform:none;letter-spacing:0;font-weight:500;color:#4f343b;white-space:nowrap}
+#rose-v2 .navlinks a.is-current{color:#a55261;border-bottom:1px solid #b8737d;padding-bottom:7px}
+#rose-v2 .book-link{min-height:43px;border-radius:40px;background:linear-gradient(90deg,#96505a,#c27776);text-transform:none;letter-spacing:.01em;font-size:12px;padding:0 24px}
+#rose-v2 .hero-body{max-width:1270px;min-height:478px;align-items:center;position:relative;padding:43px 0 33px}
+#rose-v2 .hero-copy{width:52%;max-width:610px;position:relative;z-index:2}
+#rose-v2 .hero .eyebrow{font-weight:700;font-size:11px;color:#a35260}
+#rose-v2 .hero h1{font-size:clamp(66px,8vw,112px);line-height:.88;margin:18px 0 20px;color:#35212a;text-shadow:0 2px 10px rgba(255,250,246,.28)}
+#rose-v2 .hero h1 em{color:#ad5365}
+#rose-v2 .hero-copy p{max-width:440px;font:16px/1.47 Georgia,serif;color:#69464e}
+#rose-v2 .hero-actions{margin-top:24px;gap:24px}
+#rose-v2 .hero .light-button{background:linear-gradient(90deg,#91434e,#b66b72);color:white;border-radius:28px;text-transform:none;letter-spacing:.02em;font-size:12px;min-height:43px;padding:0 25px}
+#rose-v2 .hero .text-link{color:#774853;border-bottom-color:#b57e85;text-transform:none;font-size:11px;letter-spacing:.03em}
+#rose-v2 .hero-values{margin:33px 0 0;gap:12px;color:#5e3d43;display:grid;grid-template-columns:repeat(4,auto);justify-content:start}
+#rose-v2 .hero-values li{font-size:8px;line-height:1.4;letter-spacing:.04em;white-space:nowrap;gap:6px}
+#rose-v2 .hero-values li+li{border-left:0;padding-left:5px}
+#rose-v2 .value-symbol{font-size:29px;color:#b56979}
+#rose-v2 .artist-frame{align-self:end;margin:0;position:relative;max-width:390px;width:35%;height:425px;flex:none;border-radius:185px 185px 13px 13px;overflow:hidden;border:7px solid rgba(255,244,237,.73);box-shadow:0 17px 60px rgba(98,42,53,.24);background:linear-gradient(160deg,#e8b5ad,#bd777b)}
+#rose-v2 .artist-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 38%}
+#rose-v2 .artist-frame figcaption{position:absolute;left:12px;right:12px;bottom:12px;padding:13px 16px;border:1px solid rgba(255,255,255,.7);border-radius:12px;background:rgba(255,248,245,.88);backdrop-filter:blur(12px);color:#5f3741}
+#rose-v2 .artist-frame figcaption span{display:block;font-size:9px;letter-spacing:.13em;color:#98646e}
+#rose-v2 .artist-frame figcaption strong{display:block;margin-top:6px;font:normal 20px Georgia,serif}
+#rose-v2 .hero-ribbon{width:min(1290px,calc(100% - 56px));display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;position:relative;margin:0 auto;transform:translateY(29px);background:none;border:0;border-radius:0;box-shadow:none;backdrop-filter:none}
+#rose-v2 .hero-ribbon a{border:3px solid #fff8f4;border-radius:17px;min-height:122px;padding:20px 22px 20px 45%;background-color:#edc2ba;background-size:cover;background-position:left center;box-shadow:0 10px 23px rgba(129,78,84,.12);color:#68323d;transition:transform .2s}
+#rose-v2 .hero-ribbon a:hover{transform:translateY(-3px)}
+#rose-v2 .hero-ribbon a+a{border-left:3px solid #fff8f4}
+#rose-v2 .hero-ribbon .category-lashes{background-image:linear-gradient(90deg,rgba(255,236,231,.04),rgba(252,221,218,.94) 55%,#f3d4d0),url('https://images.pexels.com/photos/7446923/pexels-photo-7446923.jpeg?auto=compress&cs=tinysrgb&w=620')}
+#rose-v2 .hero-ribbon .category-brows{background-image:linear-gradient(90deg,rgba(255,237,233,.03),rgba(249,219,211,.94) 55%,#efd0c8),url('https://images.pexels.com/photos/6135621/pexels-photo-6135621.jpeg?auto=compress&cs=tinysrgb&w=620')}
+#rose-v2 .hero-ribbon .category-waxing{background-image:linear-gradient(90deg,rgba(255,237,233,.03),rgba(250,219,212,.94) 55%,#efd2ca),url('https://images.pexels.com/photos/6763621/pexels-photo-6763621.jpeg?auto=compress&cs=tinysrgb&w=620')}
+#rose-v2 .hero-ribbon a div{min-width:0}
+#rose-v2 .hero-ribbon strong{font-size:29px;letter-spacing:-.04em}
+#rose-v2 .hero-ribbon small{font-size:8px;line-height:1.4;letter-spacing:.06em;white-space:normal}
+#rose-v2 .hero-ribbon a span{display:block;color:#a25160;font-size:11px;margin-top:9px;white-space:nowrap}
+#rose-v2 .hero-ribbon b{display:none}
+#rose-v2 .treatments{padding:64px 0 24px;background:linear-gradient(180deg,#fff8f3,#fdf4ef)}
+#rose-v2 .treatments .section-head{margin-bottom:19px;align-items:center}
+#rose-v2 .treatments .section-head h2{font-size:36px;margin-top:7px}
+#rose-v2 .treatments .section-head p{max-width:360px;font-size:12px}
+#rose-v2 .treatment-grid{grid-template-columns:repeat(3,1fr);gap:14px}
+#rose-v2 .treatment-card{min-height:165px;border-radius:17px;padding:19px 22px;box-shadow:none}
+#rose-v2 .treatment-card h3{font-size:28px;margin:8px 0}
+#rose-v2 .treatment-card p{font-size:11px;min-height:0;line-height:1.45}
+#rose-v2 .treatment-card ul{display:none}
+#rose-v2 .treatment-card a{margin-top:auto;padding-top:12px}
+#rose-v2 .home-showcase-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(340px,.9fr);gap:18px;margin-top:22px;align-items:stretch}
+#rose-v2 .home-showcase-grid .featured{margin:0;min-width:0;border:1px solid #f4ded8;border-radius:22px;padding:27px 22px 22px;background:linear-gradient(150deg,#fff7f1,#f9e3de)}
+#rose-v2 .home-showcase-grid .featured-heading{margin-bottom:21px;align-items:center;gap:15px}
+#rose-v2 .home-showcase-grid .featured-heading h2{font-size:clamp(32px,3vw,47px);margin:9px 0 7px}
+#rose-v2 .home-showcase-grid .featured-heading p{font-size:11px}
+#rose-v2 .home-showcase-grid .featured-all{padding:10px 12px;font-size:9px}
+#rose-v2 .home-showcase-grid .featured-grid{gap:10px}
+#rose-v2 .home-showcase-grid .featured-card{border-radius:14px;box-shadow:none}
+#rose-v2 .home-showcase-grid .featured-image{height:125px}
+#rose-v2 .home-showcase-grid .featured-content{padding:14px}
+#rose-v2 .home-showcase-grid .featured-content h3{min-height:0;font-size:19px}
+#rose-v2 .home-showcase-grid .featured-content>p{min-height:0;font-size:10px;margin-top:7px}
+#rose-v2 .home-showcase-grid .featured-action{margin-top:12px;padding-top:12px;display:flex;align-items:start;flex-direction:column}
+#rose-v2 .home-showcase-grid .featured-price strong{font-size:25px}
+#rose-v2 .home-showcase-grid .featured-price span{font-size:10px}
+#rose-v2 .home-showcase-grid .featured-action>a{width:100%;text-align:center;padding:10px 12px;font-size:9px}
+#rose-v2 .home-showcase-grid .featured-image-note{font-size:9px}
+#rose-v2 .home-showcase-grid .care-note{margin-top:15px;padding:16px 17px;gap:12px}
+#rose-v2 .home-showcase-grid .care-note strong{font-size:17px}
+#rose-v2 .home-showcase-grid .care-note p{font-size:11px}
+#rose-v2 .home-showcase-grid .care-note a{font-size:9px}
+#rose-v2 .home-showcase-grid .booking{min-width:0;padding:27px 22px;background:linear-gradient(155deg,#fff5ef,#f3d4d2);border:1px solid #f4ded8;border-radius:22px}
+#rose-v2 .home-showcase-grid .booking>.inner{width:100%;max-width:none}
+#rose-v2 .home-showcase-grid .booking-intro{text-align:left;margin:0 0 15px}
+#rose-v2 .home-showcase-grid .booking-intro .eyebrow{justify-content:flex-start}
+#rose-v2 .home-showcase-grid .booking-intro h2{font-size:clamp(31px,3vw,45px);margin:10px 0 8px}
+#rose-v2 .home-showcase-grid .booking-intro p{font-size:11px;line-height:1.5}
+#rose-v2 .home-showcase-grid .booking-layout{display:block}
+#rose-v2 .home-showcase-grid .booking-panel{padding:17px;border-radius:14px;box-shadow:none}
+#rose-v2 .home-showcase-grid .booking-panel h3{font-size:21px;margin-bottom:13px}
+#rose-v2 .home-showcase-grid .form-grid{gap:10px}
+#rose-v2 .home-showcase-grid .field{gap:4px}
+#rose-v2 .home-showcase-grid .field label{font-size:9px;letter-spacing:.08em}
+#rose-v2 .home-showcase-grid input,#rose-v2 .home-showcase-grid select,#rose-v2 .home-showcase-grid textarea{min-height:39px;padding:9px 10px;font-size:12px}
+#rose-v2 .home-showcase-grid textarea{min-height:52px}
+#rose-v2 .home-showcase-grid .form-foot{margin-top:13px;gap:8px}
+#rose-v2 .home-showcase-grid .form-foot button{min-height:39px}
+#rose-v2 .home-showcase-grid .booking-status{font-size:10px;margin-top:9px}
+#rose-v2 .home-trust{display:grid;grid-template-columns:1.28fr 1fr;gap:16px;margin-top:24px;margin-bottom:36px}
+#rose-v2 .trust-studio,#rose-v2 .trust-artist{display:flex;min-height:260px;overflow:hidden;border-radius:20px;border:1px solid #efdbd7;background:#fff8f3}
+#rose-v2 .trust-studio-copy{flex:0 0 46%;display:flex;align-items:flex-start;justify-content:center;flex-direction:column;gap:11px;padding:23px}
+#rose-v2 .trust-studio img{width:54%;object-fit:cover;object-position:center}
+#rose-v2 .trust-studio h2,#rose-v2 .trust-artist h2{font-size:34px;line-height:1.07;letter-spacing:-.04em}
+#rose-v2 .trust-studio h2 em,#rose-v2 .trust-artist h2 em{color:#b1697a;font-weight:400}
+#rose-v2 .trust-studio p,#rose-v2 .trust-artist p{font-size:12px;color:#82676b;line-height:1.6}
+#rose-v2 .trust-studio a,#rose-v2 .trust-artist a{display:inline-block;color:#9a5260;font-size:11px;font-weight:700;border-bottom:1px solid currentColor;padding-bottom:5px}
+#rose-v2 .trust-artist img{width:32%;object-fit:cover;object-position:center 35%}
+#rose-v2 .trust-artist>div{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px;padding:23px}
+#rose-v2 .trust-studio .eyebrow,#rose-v2 .trust-artist .eyebrow{color:#a96f77;font-size:9px}
+#rose-v2 .menu-section{background:#fdf7f2;padding:55px 0 85px}
+#rose-v2 .menu-section .full-menu{margin:0;padding:0;border:0}
+#rose-v2 .studio{min-height:480px;grid-template-columns:1.14fr .86fr}
+#rose-v2 .studio-image{min-height:480px;background-position:center center}
+#rose-v2 .studio-copy{padding:65px 10%}
+#rose-v2 .studio-copy h2{font-size:60px}
+#rose-v2 #shop{scroll-margin-top:24px}
+@media(max-width:1100px){#rose-v2 .topnav{padding:11px 25px}#rose-v2 .navlinks{gap:13px}#rose-v2 .home-showcase-grid{grid-template-columns:1fr}#rose-v2 .home-showcase-grid .booking{padding:26px}#rose-v2 .home-showcase-grid .form-grid{grid-template-columns:repeat(2,1fr)}#rose-v2 .artist-frame{height:385px}#rose-v2 .hero-values li{font-size:7px}#rose-v2 .hero-ribbon a{padding-left:42%}}
+@media(max-width:900px){#rose-v2 .topnav .navlinks{display:none}#rose-v2 .mobile-nav{margin-top:0;position:relative;z-index:3;background:rgba(255,250,245,.93)}#rose-v2 .hero{min-height:auto;padding-bottom:22px}#rose-v2 .hero-body{min-height:430px;padding:25px 0}#rose-v2 .artist-frame{width:38%;height:330px}#rose-v2 .hero-copy{width:60%}#rose-v2 .hero h1{font-size:clamp(60px,9vw,85px)}#rose-v2 .hero-ribbon{transform:translateY(18px)}#rose-v2 .hero-ribbon a{min-height:112px;padding-left:35%;padding-right:8px}#rose-v2 .hero-ribbon strong{font-size:25px}#rose-v2 .home-trust{grid-template-columns:1fr}#rose-v2 .trust-artist img{width:30%}}
+@media(max-width:640px){#rose-v2 .topnav{padding:11px 17px}#rose-v2 .topnav .logo{font-size:35px;padding-left:28px}#rose-v2 .topnav .logo:before{font-size:30px}#rose-v2 .hero{background-position:center}#rose-v2 .hero-body{flex-direction:column;gap:12px;align-items:start;padding-top:35px}#rose-v2 .hero-copy{width:100%;max-width:none}#rose-v2 .hero h1{font-size:clamp(60px,14vw,80px);margin-top:15px}#rose-v2 .hero-copy p{max-width:350px;font-size:14px}#rose-v2 .hero-values{display:flex;flex-wrap:wrap;gap:10px}#rose-v2 .hero-values li{font-size:8px}#rose-v2 .artist-frame{align-self:center;width:min(75%,300px);height:265px;border-radius:125px 125px 12px 12px}#rose-v2 .artist-frame img{object-position:center 30%}#rose-v2 .artist-frame figcaption{padding:8px 12px}#rose-v2 .artist-frame figcaption strong{font-size:16px}#rose-v2 .hero-ribbon{grid-template-columns:1fr;gap:8px;transform:translateY(0);margin-top:15px}#rose-v2 .hero-ribbon a{min-height:92px;padding-left:43%;border-width:2px}#rose-v2 .hero-ribbon a+a{border-left-width:2px}#rose-v2 .treatments{padding:34px 0 0}#rose-v2 .treatments .section-head{display:block}#rose-v2 .treatments .section-head h2{font-size:31px}#rose-v2 .treatment-grid{grid-template-columns:1fr}#rose-v2 .treatment-card{min-height:120px;padding:17px 20px}#rose-v2 .home-showcase-grid{width:calc(100% - 25px);margin-top:17px;gap:14px}#rose-v2 .home-showcase-grid .featured{padding:20px 14px}#rose-v2 .home-showcase-grid .featured-heading{display:block}#rose-v2 .home-showcase-grid .featured-all{margin-top:12px}#rose-v2 .home-showcase-grid .featured-grid{grid-template-columns:1fr}#rose-v2 .home-showcase-grid .featured-card{display:grid;grid-template-columns:39% 61%}#rose-v2 .home-showcase-grid .featured-image{height:100%;min-height:145px}#rose-v2 .home-showcase-grid .featured-content{padding:14px}#rose-v2 .home-showcase-grid .featured-action{flex-direction:row;align-items:end}#rose-v2 .home-showcase-grid .featured-action>a{width:auto}#rose-v2 .home-showcase-grid .care-note a{margin-left:0}#rose-v2 .home-showcase-grid .booking{padding:21px 15px}#rose-v2 .home-showcase-grid .form-grid{grid-template-columns:1fr}#rose-v2 .home-trust{width:calc(100% - 25px)}#rose-v2 .trust-studio{display:block}#rose-v2 .trust-studio-copy{padding:20px}#rose-v2 .trust-studio img{width:100%;height:245px;display:block}#rose-v2 .trust-artist{min-height:240px}#rose-v2 .trust-artist img{width:39%}#rose-v2 .trust-artist>div{padding:16px;gap:8px}#rose-v2 .trust-artist h2{font-size:26px}#rose-v2 .trust-artist p{font-size:11px}#rose-v2 .menu-section{padding:45px 0 65px}#rose-v2 .studio{grid-template-columns:1fr}#rose-v2 .studio-image{min-height:360px}}
+@media(prefers-reduced-motion:reduce){#rose-v2 .hero-ribbon a{transition:none}}
+
+
+/* Portrait-free release: customer-approved, salon-first page. */
+#rose-v2 .hero{background-image:linear-gradient(90deg,rgba(255,249,246,.95) 0%,rgba(255,239,232,.79) 40%,rgba(244,199,188,.30) 100%),url('/assets/rose-salon.jpg');background-size:cover;background-position:center 48%}
+#rose-v2 .hero-copy{width:100%;max-width:740px}
+#rose-v2 .hero-body{justify-content:flex-start;min-height:465px}
+#rose-v2 .hero h1{max-width:670px}
+#rose-v2 .hero-copy p{max-width:495px}
+#rose-v2 .hero-values{grid-template-columns:repeat(4,auto);gap:13px}
+#rose-v2 .hero-ribbon{margin-bottom:6px}
+#rose-v2 .home-trust{grid-template-columns:1fr}
+#rose-v2 .trust-studio{grid-column:1/-1;min-height:290px}
+#rose-v2 .trust-studio-copy{flex-basis:47%;padding:36px clamp(25px,5vw,70px)}
+#rose-v2 .trust-studio img{width:53%;max-height:375px;object-position:center}
+#rose-v2 .studio-image{background-image:url('/assets/rose-salon.jpg')}
+#rose-v2 .artist-frame,#rose-v2 .trust-artist{display:none!important}
+@media(max-width:900px){#rose-v2 .hero-body{min-height:450px}#rose-v2 .hero-copy{width:100%}}
+@media(max-width:640px){
+#rose-v2 .hero{background-position:center center;background-image:linear-gradient(90deg,rgba(255,249,246,.96),rgba(255,238,231,.80)),url('/assets/rose-salon.jpg')}
+#rose-v2 .hero-body{min-height:auto;padding:48px 0 33px}
+#rose-v2 .hero-copy{max-width:100%}
+#rose-v2 .hero-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+#rose-v2 .hero-ribbon{margin-bottom:0}
+#rose-v2 .trust-studio{display:flex;flex-direction:column}
+#rose-v2 .trust-studio-copy{flex-basis:auto;width:100%}
+#rose-v2 .trust-studio img{height:245px;width:100%;max-height:none}
+}
