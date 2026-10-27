@@ -1,0 +1,410 @@
+/* Rose Responsive & Accessibility V3
+   Non-destructive presentation overrides. Keep the official Rose assets,
+   service data, booking enquiry, brand palette and product concepts intact.
+   Load after styles.css. No sticky booking bar or SEO changes in this release. */
+
+#rose-v2 {
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+#rose-v2 :is(p, li, small, label, a, button, input, select, textarea) {
+  overflow-wrap: break-word;
+}
+#rose-v2 :is(input, select, textarea) {
+  min-width: 0;
+  max-width: 100%;
+}
+#rose-v2 .skip-link {
+  position: fixed;
+  z-index: 10000;
+  top: -100px;
+  left: 14px;
+  padding: 13px 20px;
+  background: #432630;
+  color: #fffaf7;
+  border-radius: 0 0 12px 12px;
+  font: 700 15px/1.3 Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+#rose-v2 .skip-link:focus { top: 0; }
+#rose-v2 :is(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid #63303c;
+  outline-offset: 3px;
+}
+#rose-v2 :is(#treatments, #booking, #price-list, #studio, #shop, #contact) {
+  scroll-margin-top: 24px;
+}
+
+/* Clear, consistent type scale without changing the editorial serif titles. */
+#rose-v2 .eyebrow,
+#rose-v2 .hero .eyebrow,
+#rose-v2 .trust-studio .eyebrow,
+#rose-v2 .product-modal-copy .eyebrow {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: .10em;
+  color: #74404a;
+}
+#rose-v2 .hero .eyebrow { color: #854351; }
+#rose-v2 .navlinks a,
+#rose-v2 .topnav .navlinks a { font-size: 14px; line-height: 1.5; }
+#rose-v2 .navlinks { gap: clamp(12px, 1.45vw, 20px); }
+#rose-v2 .book-link,
+#rose-v2 .topnav .book-link,
+#rose-v2 .hero .light-button {
+  min-height: 48px;
+  font-size: 15px;
+  letter-spacing: .01em;
+  padding-inline: 18px;
+}
+#rose-v2 .hero .text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 15px;
+}
+#rose-v2 .hero-copy p { font-size: 17px; line-height: 1.65; color: #563741; }
+#rose-v2 .hero-values li { font-size: 12px; line-height: 1.45; letter-spacing: .01em; white-space: normal; }
+#rose-v2 .hero-ribbon a { min-height: 130px; }
+#rose-v2 .hero-ribbon small {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: .035em;
+  color: #6e3d48;
+}
+#rose-v2 .hero-ribbon a span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  font-size: 14px;
+  color: #713742;
+  white-space: normal;
+}
+
+/* Overview and editorial sections. */
+#rose-v2 .treatments .section-head p,
+#rose-v2 .section-head p,
+#rose-v2 .home-showcase-grid .featured-heading p,
+#rose-v2 .home-showcase-grid .booking-intro p,
+#rose-v2 .trust-studio p,
+#rose-v2 .trust-studio a,
+#rose-v2 .studio-copy > p,
+#rose-v2 .booking-intro p,
+#rose-v2 .menu-heading > p,
+#rose-v2 .shop-hero > p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #603f47;
+}
+#rose-v2 .treatment-card .number { font-size: 12px; color: #74404a; letter-spacing: .09em; }
+#rose-v2 .treatment-card p,
+#rose-v2 .home-showcase-grid .featured-content > p,
+#rose-v2 .home-showcase-grid .care-note p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #603f47;
+}
+#rose-v2 .treatment-card a,
+#rose-v2 .home-showcase-grid .care-note a,
+#rose-v2 .trust-studio a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 14px;
+  line-height: 1.45;
+  letter-spacing: .01em;
+  color: #713742;
+}
+#rose-v2 .home-showcase-grid .featured-all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  font-size: 14px;
+  letter-spacing: .02em;
+}
+#rose-v2 .home-showcase-grid .featured-content h3 { font-size: clamp(21px, 2vw, 25px); line-height: 1.22; }
+#rose-v2 .home-showcase-grid .featured-price span,
+#rose-v2 .home-showcase-grid .featured-image-note {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #68454e;
+}
+#rose-v2 .featured-tag { font-size: 12px; letter-spacing: .07em; }
+#rose-v2 .home-showcase-grid .featured-action > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  font-size: 14px;
+  letter-spacing: .02em;
+}
+#rose-v2 .home-showcase-grid .care-note strong { font-size: 20px; }
+
+/* The enquiry stays an enquiry: no changes to submit/copy/email logic. */
+#rose-v2 .home-showcase-grid .booking-panel { padding: 22px; }
+#rose-v2 .home-showcase-grid .booking-panel h3 { font-size: 24px; }
+#rose-v2 .home-showcase-grid .field { gap: 7px; }
+#rose-v2 .home-showcase-grid .form-grid { gap: 16px 13px; }
+#rose-v2 label,
+#rose-v2 .home-showcase-grid .field label {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: .035em;
+  color: #613641;
+}
+#rose-v2 input,
+#rose-v2 select,
+#rose-v2 textarea,
+#rose-v2 .home-showcase-grid input,
+#rose-v2 .home-showcase-grid select,
+#rose-v2 .home-showcase-grid textarea {
+  font-size: 16px; /* iOS Safari does not need to zoom to focus normal fields. */
+  line-height: 1.45;
+  min-height: 50px;
+  padding: 13px 14px;
+  color: #432630;
+  border-color: #b99a9c;
+}
+#rose-v2 textarea,
+#rose-v2 .home-showcase-grid textarea { min-height: 110px; }
+#rose-v2 :is(input, textarea)::placeholder { color: #72575e; opacity: 1; }
+#rose-v2 .home-showcase-grid .form-foot button,
+#rose-v2 .form-foot button,
+#rose-v2 .copy-button {
+  min-height: 48px;
+  font-size: 15px;
+  line-height: 1.35;
+  letter-spacing: .015em;
+  opacity: 1;
+}
+#rose-v2 .booking-live button:disabled { opacity: .58; }
+#rose-v2 .home-showcase-grid .booking-status,
+#rose-v2 .booking-status,
+#rose-v2 .form-foot small {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #603e47;
+}
+
+/* Full price list: treatment duration, infill and booking link all legible. */
+#rose-v2 .menu-heading > p { max-width: 440px; }
+#rose-v2 .menu-tabs button {
+  font-size: 15px;
+  letter-spacing: .015em;
+  min-height: 48px;
+  padding: 11px 19px;
+}
+#rose-v2 .service-row { min-width: 0; gap: 14px; }
+#rose-v2 .service-row > div:first-child { min-width: 0; }
+#rose-v2 .service-row small {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #66444d;
+}
+#rose-v2 .service-row h3 { overflow-wrap: normal; font-size: clamp(21px, 2.2vw, 25px); }
+#rose-v2 .service-price { min-width: 104px; }
+#rose-v2 .service-price .infill {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #69404a;
+}
+#rose-v2 .service-price a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 44px;
+  font-size: 15px;
+}
+#rose-v2 .policy-item p { font-size: 15px; line-height: 1.65; color: #603f47; }
+#rose-v2 .menu-disclaimer { font-size: 14px; line-height: 1.65; color: #66454d; }
+
+/* Rose Edit: same concepts, products, prices, images and dialog behaviour. */
+#rose-v2 .shop-category { font-size: 12px; letter-spacing: .07em; color: #74404a; }
+#rose-v2 .shop-copy > p { font-size: 15px; line-height: 1.6; color: #603f47; }
+#rose-v2 .shop-pricing span { font-size: 14px; color: #68454e; }
+#rose-v2 .shop-detail { font-size: 15px; min-height: 49px; }
+#rose-v2 .shop-perks small { font-size: 14px; line-height: 1.5; color: #66444d; }
+#rose-v2 .shop-info { font-size: 14px; line-height: 1.6; color: #603d47; }
+#rose-v2 .product-modal-close { width: 46px; height: 46px; }
+#rose-v2 .product-modal-desc { font-size: 16px; line-height: 1.65; color: #603f47; }
+#rose-v2 .product-modal-price small { font-size: 14px; line-height: 1.5; color: #69434c; }
+#rose-v2 .product-modal-highlights li,
+#rose-v2 .product-modal-notice { font-size: 15px; line-height: 1.55; color: #603f47; }
+#rose-v2 .product-modal-done { min-height: 48px; font-size: 15px; }
+#rose-v2 .product-dialog { max-height: min(90dvh, 800px); }
+
+/* Footer and tertiary information. */
+#rose-v2 footer .footer-brand p,
+#rose-v2 footer .footer-column a,
+#rose-v2 footer .footer-contact p { font-size: 15px; line-height: 1.6; color: #f8e7e2; }
+#rose-v2 footer .footer-column a { display: inline-flex; align-items: center; min-height: 38px; }
+#rose-v2 footer .footer-contact .footer-book {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  font-size: 15px;
+}
+#rose-v2 footer .footer-bottom,
+#rose-v2 footer p { font-size: 13px; line-height: 1.5; letter-spacing: .015em; }
+
+/* Tablet: generous, readable quick navigation. */
+@media (max-width: 900px) {
+  #rose-v2 .mobile-nav {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 6px;
+    align-items: stretch;
+    overflow: visible;
+    padding: 9px;
+    width: calc(100% - 32px);
+    background: #fff8f3;
+  }
+  #rose-v2 .mobile-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 0;
+    min-height: 44px;
+    padding: 8px 6px;
+    border-radius: 10px;
+    color: #583540;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    text-transform: none;
+    white-space: normal;
+  }
+  #rose-v2 .mobile-nav a:hover,
+  #rose-v2 .mobile-nav a:focus-visible { background: #f0d9d4; }
+  #rose-v2 .hero-values { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #rose-v2 .hero-values li { font-size: 12px; }
+  #rose-v2 .hero-ribbon a { padding-left: 40%; }
+  #rose-v2 .home-showcase-grid .booking-panel { padding: 23px; }
+}
+
+/* iPhone and Android phones, including narrower 320px viewports. */
+@media (max-width: 640px) {
+  #rose-v2 .inner,
+  #rose-v2 .home-showcase-grid,
+  #rose-v2 .home-trust { width: calc(100% - 32px); }
+  #rose-v2 .topnav { gap: 8px; padding: 10px 16px; min-height: 68px; }
+  #rose-v2 .topnav .logo.logo-official { width: clamp(112px, 38vw, 146px); max-width: 46vw; }
+  #rose-v2 .topnav .book-link { min-height: 46px; font-size: 14px; padding-inline: 14px; }
+  #rose-v2 .mobile-nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+    margin-top: 0;
+    padding: 8px;
+  }
+  #rose-v2 .mobile-nav a { font-size: 14px; min-height: 46px; }
+  #rose-v2 .hero-body { padding-top: 34px; padding-bottom: 30px; }
+  #rose-v2 .hero h1 { font-size: clamp(49px, 12.5vw, 72px); line-height: .99; }
+  #rose-v2 .hero-copy p { font-size: 16px; line-height: 1.65; max-width: 100%; }
+  #rose-v2 .hero-actions { gap: 10px 18px; flex-wrap: wrap; }
+  #rose-v2 .hero .light-button { min-height: 50px; font-size: 15px; padding-inline: 18px; }
+  #rose-v2 .hero-values { gap: 12px 14px; margin-top: 23px; }
+  #rose-v2 .hero-values li,
+  #rose-v2 .hero-values li+li {
+    padding-left: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+  #rose-v2 .hero-ribbon { width: calc(100% - 32px); gap: 10px; }
+  #rose-v2 .hero-ribbon a {
+    min-height: 116px;
+    padding: 16px 13px 16px 43%;
+    border-width: 2px;
+  }
+  #rose-v2 .hero-ribbon strong { font-size: 26px; }
+  #rose-v2 .hero-ribbon small { font-size: 12px; }
+  #rose-v2 .hero-ribbon a span { font-size: 14px; margin-top: 5px; }
+  #rose-v2 .treatments { padding-top: 48px; }
+  #rose-v2 .treatments .section-head h2,
+  #rose-v2 .home-showcase-grid .featured-heading h2,
+  #rose-v2 .home-showcase-grid .booking-intro h2,
+  #rose-v2 .menu-heading h2,
+  #rose-v2 .shop-hero h2 { font-size: clamp(31px, 8.7vw, 42px); line-height: 1.13; }
+  #rose-v2 .treatment-card { padding: 20px; }
+  #rose-v2 .treatment-card p { font-size: 15px; }
+  #rose-v2 .home-showcase-grid { gap: 18px; margin-top: 20px; }
+  #rose-v2 .home-showcase-grid .featured { padding: 22px 16px; }
+  #rose-v2 .home-showcase-grid .featured-grid { gap: 16px; }
+  #rose-v2 .home-showcase-grid .featured-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  #rose-v2 .home-showcase-grid .featured-image { width: 100%; height: 200px; min-height: 0; }
+  #rose-v2 .home-showcase-grid .featured-content { padding: 18px; }
+  #rose-v2 .home-showcase-grid .featured-action {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  #rose-v2 .home-showcase-grid .featured-action > a { width: auto; padding: 12px 19px; }
+  #rose-v2 .home-showcase-grid .featured-heading p,
+  #rose-v2 .home-showcase-grid .booking-intro p { font-size: 16px; }
+  #rose-v2 .home-showcase-grid .booking { padding: 23px 15px; }
+  #rose-v2 .home-showcase-grid .booking-panel { padding: 19px 16px; }
+  #rose-v2 .home-showcase-grid .form-grid { grid-template-columns: 1fr; }
+  #rose-v2 .home-showcase-grid .form-foot { align-items: stretch; flex-direction: column; }
+  #rose-v2 .home-showcase-grid .form-foot button { width: 100%; }
+  #rose-v2 .service-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 9px;
+    padding: 20px;
+  }
+  #rose-v2 .service-row h3 { font-size: 24px; }
+  #rose-v2 .service-price {
+    width: 100%;
+    min-width: 0;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 2px 18px;
+  }
+  #rose-v2 .service-price .infill { margin: 0; }
+  #rose-v2 .service-price a {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    margin-top: 3px;
+  }
+  #rose-v2 .menu-tabs { gap: 8px; }
+  #rose-v2 .menu-tabs button { flex: 1 1 auto; padding-inline: 12px; }
+  #rose-v2 .policy-item { padding: 20px; }
+  #rose-v2 .studio-copy { padding: 43px 8%; }
+  #rose-v2 .studio-copy h2 { font-size: 43px; }
+  #rose-v2 .shop-copy { padding: 22px; }
+  #rose-v2 .shop-perks small { font-size: 13px; }
+  #rose-v2 .product-modal-copy { padding: 42px 21px 25px; }
+  #rose-v2 .product-modal-copy h2 { font-size: 33px; }
+  #rose-v2 .product-modal-image img { height: 165px; min-height: 0; }
+  #rose-v2 .product-modal-close { right: 12px; top: 10px; }
+  #rose-v2 footer .footer-grid { gap: 24px 18px; }
+  #rose-v2 footer .footer-column a { min-height: 44px; }
+}
+@media (max-width: 360px) {
+  #rose-v2 .hero-ribbon a { padding-left: 39%; }
+  #rose-v2 .hero-ribbon strong { font-size: 24px; }
+  #rose-v2 .hero-values { gap: 9px; }
+  #rose-v2 .home-showcase-grid .featured-image { height: 175px; }
+  #rose-v2 .shop-perks { grid-template-columns: 1fr; }
+  #rose-v2 .shop-perks > div { border-left: 0 !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #rose-v2 *, #rose-v2 *::before, #rose-v2 *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
