@@ -41,3 +41,12 @@ The design-reference catalogue currently includes Lash cleanser (A$22), Soft las
 - 26 exact service prices and durations, four conceptual Rose Edit products, and the server-side email booking route remain unchanged.
 - Do not copy the example's invented business address, testimonials, owners' names or prices into production.
 - Validate using `python tests/test_portrait_free_homepage.py`, `python tests/test_visual_source.py`, `python tests/check_data.py`, `node --check app.js`, and `node --test tests/test_booking.cjs`.
+
+## Search visibility and SEO (October 2026)
+- Public indexing enabled in `index.html`: removed the former `noindex,nofollow` instruction. Homepage and category landing pages have unique titles/descriptions, self-referencing canonical URLs, Open Graph previews, and JSON-LD without invented business details.
+- The `/lashes/`, `/brows/`, and `/waxing/` landing pages render the 26 verified treatment-menu entries in static HTML. Keep their price/duration content in sync with `data/services.json` when changes occur.
+- `robots.txt` points to `sitemap.xml`; submit `https://rose-lash-shop.vercel.app/sitemap.xml` to Google Search Console once website ownership is verified.
+- All pages use `en-AU` and Australian dollars (AUD) based on the supplied price menu. **No unverified address, telephone, operating hours, reviews or Google Business Profile URL are included.** Add verified studio address/service area and contact information before pursuing location-specific local SEO or Google local business rich-result eligibility.
+- The four Rose Edit catalogue items remain expressly **concept-only** and are not included in product/merchant structured data or the sitemap.
+- Add a genuine canonical custom domain later if available; update metadata, schema URLs, internal sitemap URLs and Search Console together, and permanently redirect the old host.
+- Run `python tests/test_seo.py` to check the SEO data, schema syntax, indexability, and service menu. Google indexing/placement and Core Web Vitals require checks from Google Search Console and PageSpeed Insights; SEO markup alone does not guarantee either.
