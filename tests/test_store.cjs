@@ -59,7 +59,7 @@ test('provider email uses catalogue-derived pricing, never browser price',async(
 test('homepage layers store UI without changing four legacy product cards or booking',()=>{
  const html=src('index.html');
  assert.match(html,/rose-store\.css/);assert.match(html,/rose-store\.js/);
- assert.match(html,/api\/booking/);assert.match(html,/rose-product-dialog/);
+ assert.match(src('app.js'),/api\/booking/);assert.match(html,/rose-product-dialog/);
  assert.equal((html.match(/data-shop-product=/g)||[]).length,4);
  const client=src('rose-store.js');
  assert.match(client,/\/api\/order/);
