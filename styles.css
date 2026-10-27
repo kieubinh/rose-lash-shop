@@ -422,3 +422,45 @@
 #rose-v2 .trust-studio-copy{flex-basis:auto;width:100%}
 #rose-v2 .trust-studio img{height:245px;width:100%;max-height:none}
 }
+
+/* Official Rose brand mark: preserve the submitted artwork and transparency. */
+#rose-v2 .logo.logo-official{
+  display:inline-flex;
+  align-items:center;
+  flex-shrink:0;
+  padding:0;
+  line-height:normal;
+  letter-spacing:normal;
+  font-size:inherit;
+  white-space:normal;
+}
+#rose-v2 .topnav .logo.logo-official{
+  width:190px;
+  max-width:29vw;
+  padding:0;
+  margin:0;
+}
+#rose-v2 .topnav .logo.logo-official::before{content:none;display:none;}
+#rose-v2 .logo-official img{
+  width:100%;
+  height:auto;
+  aspect-ratio:3/1;
+  display:block;
+  object-fit:contain;
+}
+#rose-v2 footer .logo.logo-official{
+  width:222px;
+  max-width:100%;
+  padding:9px 13px;
+  border:1px solid rgba(255,247,239,.5);
+  border-radius:14px;
+  background:#fff5ee;
+  box-shadow:0 9px 24px rgba(23,8,14,.12);
+}
+@media(max-width:1100px){
+  #rose-v2 .topnav .logo.logo-official{width:170px;max-width:26vw;}
+}
+@media(max-width:640px){
+  #rose-v2 .topnav .logo.logo-official{width:146px;max-width:46vw;padding:0;}
+  #rose-v2 footer .logo.logo-official{width:195px;}
+}
