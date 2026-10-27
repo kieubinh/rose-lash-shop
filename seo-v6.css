@@ -1,0 +1,137 @@
+/* Rose SEO V6: crawlable service navigation and legible, mobile-first landing pages.
+   Preserves Rose theme, service prices, original salon imagery and booking behaviour. */
+#rose-v2 .hero h1 .hero-seo-context {
+  display: block;
+  width: fit-content;
+  max-width: min(100%, 570px);
+  margin: 22px 0 0;
+  color: #653b46;
+  font: 700 clamp(15px, 1.45vw, 18px)/1.5 Arial, Helvetica, sans-serif;
+  letter-spacing: .015em;
+  text-shadow: none;
+}
+#rose-v2 .treatment-card .seo-category-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  justify-content: flex-start;
+  width: fit-content;
+  min-height: 44px;
+  margin: 3px 0 0;
+  padding: 6px 0;
+  color: #59343e;
+  font: 700 14px/1.5 Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+#rose-v2 .treatment-card .seo-category-link span { flex-shrink: 0; }
+#rose-v2 .treatment-card .seo-category-link:hover { color: #9a5260; }
+#rose-v2 .treatment-grid { align-items: stretch; }
+#rose-v2 .treatment-card { min-width: 0; }
+#rose-v2 .treatment-card :is(a, button):focus-visible {
+  outline: 3px solid #74404a;
+  outline-offset: 3px;
+}
+
+/* Category landing pages hide desktop navigation under 900px, so expose
+   clear internal links instead of leaving mobile visitors without a menu. */
+#rose-v2.seo-page .seo-mobile-nav { display: none; }
+#rose-v2.seo-page .seo-skip-link {
+  position: fixed;
+  z-index: 9999;
+  left: 12px;
+  top: -110px;
+  padding: 12px 17px;
+  background: #fff7f2;
+  color: #432630;
+  border: 2px solid #74404a;
+  border-radius: 9px;
+  font: 700 15px/1.4 Arial, Helvetica, sans-serif;
+}
+#rose-v2.seo-page .seo-skip-link:focus { top: 8px; }
+#rose-v2.seo-page .seo-top .topnav .navlinks a { font-size: 14px; }
+#rose-v2.seo-page .seo-top .book-link,
+#rose-v2.seo-page .seo-hero .light-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  font-size: 15px;
+  letter-spacing: .02em;
+}
+#rose-v2.seo-page .seo-hero .light-button { padding: 12px 22px; }
+#rose-v2.seo-page .seo-breadcrumb { font-size: 15px; line-height: 1.5; }
+#rose-v2.seo-page .seo-breadcrumb a { min-height: 36px; display: inline-flex; align-items: center; }
+#rose-v2.seo-page .seo-service p,
+#rose-v2.seo-page .seo-service small { font-size: 15px; line-height: 1.55; }
+#rose-v2.seo-page .seo-other a,
+#rose-v2.seo-page .seo-bottom a {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 1.45;
+}
+#rose-v2.seo-page .seo-content { scroll-margin-top: 28px; }
+#rose-v2.seo-page .seo-content h2 { text-wrap: balance; }
+@media (max-width: 900px) {
+  #rose-v2.seo-page .seo-top .topnav { margin-bottom: 12px; }
+  #rose-v2.seo-page .seo-mobile-nav {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+    width: min(100% - 36px, 880px);
+    margin: 0 auto 58px;
+    padding: 9px;
+    border: 1px solid rgba(255,255,255,.38);
+    border-radius: 14px;
+    background: rgba(54, 29, 40, .75);
+  }
+  #rose-v2.seo-page .seo-mobile-nav a {
+    min-width: 0;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 5px;
+    border-radius: 9px;
+    font: 700 14px/1.3 Arial, Helvetica, sans-serif;
+    color: #fff8f3;
+    text-align: center;
+    text-decoration: none;
+  }
+  #rose-v2.seo-page .seo-mobile-nav a[aria-current="page"] {
+    background: #fff4ef;
+    color: #56313c;
+  }
+  #rose-v2.seo-page .seo-mobile-nav a:not([aria-current]):hover {
+    background: rgba(255,255,255,.17);
+  }
+}
+@media (max-width: 640px) {
+  #rose-v2 .hero h1 .hero-seo-context {
+    font-size: 15px;
+    line-height: 1.45;
+    margin-top: 18px;
+  }
+  #rose-v2 .treatment-card .seo-category-link { font-size: 15px; }
+  #rose-v2.seo-page .seo-mobile-nav {
+    margin-bottom: 38px;
+    gap: 4px;
+    width: calc(100% - 24px);
+    padding: 7px;
+  }
+  #rose-v2.seo-page .seo-mobile-nav a { font-size: 13px; min-height: 46px; }
+  #rose-v2.seo-page .seo-service p,
+  #rose-v2.seo-page .seo-service small { font-size: 15px; }
+  #rose-v2.seo-page .seo-service { gap: 12px; }
+}
+@media (max-width: 360px) {
+  #rose-v2.seo-page .seo-mobile-nav a { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #rose-v2.seo-page * { scroll-behavior: auto !important; }
+}
