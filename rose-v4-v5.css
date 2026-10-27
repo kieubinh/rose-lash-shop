@@ -1,0 +1,308 @@
+/* Rose V4 + V5 — presentation-only enhancements to the existing palette.
+   V4: mobile booking shortcut. V5: Rose Edit concept catalogue filters and details.
+   Featured-card alignment / lash aftercare corrections from customer review. */
+
+#rose-v2 .home-showcase-grid .featured-grid { align-items: stretch; }
+#rose-v2 .home-showcase-grid .featured-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#rose-v2 .home-showcase-grid .featured-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  padding: 19px 18px 21px;
+}
+#rose-v2 .home-showcase-grid .featured-content h3 {
+  min-height: 0;
+  margin: 0 0 10px;
+  line-height: 1.19;
+  overflow-wrap: break-word;
+}
+#rose-v2 .home-showcase-grid .featured-content > p {
+  min-height: 0;
+  margin: 0 0 21px;
+  line-height: 1.6;
+}
+#rose-v2 .home-showcase-grid .featured-action {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 13px;
+  margin-top: auto;
+  padding-top: 17px;
+}
+#rose-v2 .home-showcase-grid .featured-price strong { line-height: 1.15; }
+#rose-v2 .home-showcase-grid .featured-price span { margin-top: 3px; }
+#rose-v2 .home-showcase-grid .featured-action > a,
+#rose-v2 .home-showcase-grid .featured-all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  text-decoration: none;
+}
+#rose-v2 .home-showcase-grid .featured-action > a {
+  width: 100%;
+  min-height: 49px;
+  padding: 11px 16px;
+  font-size: 14px;
+  letter-spacing: .025em;
+  white-space: normal;
+}
+#rose-v2 .home-showcase-grid .featured-action > a span,
+#rose-v2 .home-showcase-grid .featured-all span { display: inline-block; flex-shrink: 0; }
+#rose-v2 .home-showcase-grid .featured-all {
+  white-space: normal;
+  min-height: 48px;
+  padding: 11px 17px;
+  text-align: center;
+  line-height: 1.35;
+}
+#rose-v2 .home-showcase-grid .featured-image-note {
+  margin-top: 16px;
+  line-height: 1.6;
+}
+
+/* Better aftercare layout, including the link that selects the Lashes policy. */
+#rose-v2 .home-showcase-grid .care-note {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: center;
+  column-gap: 16px;
+  row-gap: 6px;
+  padding: 22px 24px;
+}
+#rose-v2 .home-showcase-grid .care-note-icon {
+  grid-row: 1 / span 2;
+  align-self: start;
+  padding-top: 4px;
+}
+#rose-v2 .home-showcase-grid .care-note > div { min-width: 0; }
+#rose-v2 .home-showcase-grid .care-note strong {
+  line-height: 1.25;
+  display: block;
+}
+#rose-v2 .home-showcase-grid .care-note p {
+  margin: 7px 0 0;
+  line-height: 1.65;
+}
+#rose-v2 .home-showcase-grid .care-note > a {
+  grid-column: 2;
+  min-width: 0;
+  min-height: 44px;
+  width: fit-content;
+  margin: 2px 0 0;
+  padding: 8px 0;
+  gap: 9px;
+  white-space: normal;
+  font-size: 14px;
+  line-height: 1.4;
+}
+@media (min-width: 1250px) {
+  #rose-v2 .home-showcase-grid .care-note { grid-template-columns: 44px minmax(0, 1fr) auto; }
+  #rose-v2 .home-showcase-grid .care-note-icon { grid-row: 1; }
+  #rose-v2 .home-showcase-grid .care-note > a { grid-column: 3; grid-row: 1; align-self: center; }
+}
+
+/* V5 — transparent concept showcase; products and indicative prices unchanged. */
+#rose-v2 .shop-hero { max-width: 860px; }
+#rose-v2 .shop-collection-note {
+  margin: 15px 0 0;
+  color: #653f49;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+#rose-v2 .shop-discovery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px 20px;
+  margin: 9px 0 22px;
+}
+#rose-v2 .shop-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+#rose-v2 .shop-filter {
+  min-height: 46px;
+  padding: 9px 17px;
+  border: 1px solid #bc9095;
+  border-radius: 999px;
+  background: #fff8f4;
+  color: #613741;
+  font: 700 14px/1.35 Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+#rose-v2 .shop-filter[aria-pressed="true"] {
+  background: #74404a;
+  border-color: #74404a;
+  color: #fffaf7;
+}
+#rose-v2 .shop-filter[aria-pressed="false"]:hover { background: #f1d9d4; }
+#rose-v2 .shop-filter:focus-visible {
+  outline: 3px solid #432630;
+  outline-offset: 3px;
+}
+#rose-v2 .shop-filter-status {
+  margin: 0;
+  color: #603d47;
+  font-size: 14px;
+  line-height: 1.5;
+}
+#rose-v2 .shop-card[hidden] { display: none !important; }
+#rose-v2 .shop-card {
+  border-color: #ead1cd;
+}
+#rose-v2 .shop-picture { position: relative; }
+#rose-v2 .shop-concept-badge {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  z-index: 1;
+  padding: 7px 11px;
+  border: 1px solid #fff9f5;
+  border-radius: 999px;
+  background: rgba(255, 249, 246, .96);
+  color: #653a45;
+  font: 700 12px/1.4 Arial, Helvetica, sans-serif;
+  box-shadow: 0 3px 12px rgba(76, 36, 45, .08);
+}
+#rose-v2 .shop-copy { min-height: 270px; }
+#rose-v2 .shop-copy > p { min-height: 0; }
+#rose-v2 .shop-pricing {
+  margin-top: auto;
+  padding-top: 20px;
+  gap: 10px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+#rose-v2 .shop-pricing span {
+  color: #603e48;
+  font-size: 14px;
+}
+#rose-v2 .shop-detail {
+  min-height: 49px;
+  gap: 9px;
+}
+#rose-v2 .product-dialog {
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+#rose-v2 .product-modal-copy {
+  min-width: 0;
+  gap: 1px;
+}
+#rose-v2 .product-modal-desc { margin-top: 6px; }
+#rose-v2 .product-modal-notice { margin-bottom: 18px; }
+#rose-v2 .product-modal-done {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+}
+#rose-v2 .product-modal-copy :is(button, a):focus-visible {
+  outline: 3px solid #432630;
+  outline-offset: 3px;
+}
+
+/* V4 — always an enquiry, never a confirmed reservation or payment. */
+#rose-v2 .rose-mobile-booking { display: none; }
+@media (max-width: 900px) {
+  #rose-v2 .home-showcase-grid .care-note {
+    grid-template-columns: 40px minmax(0,1fr);
+    padding: 20px;
+  }
+  #rose-v2 .home-showcase-grid .care-note > a { grid-column: 2; }
+}
+@media (max-width: 640px) {
+  #rose-v2 .home-showcase-grid .featured-card { display: flex; flex-direction: column; }
+  #rose-v2 .home-showcase-grid .featured-content { min-height: 0; padding: 18px 18px 21px; }
+  #rose-v2 .home-showcase-grid .featured-action { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+  #rose-v2 .home-showcase-grid .featured-action > a { width: auto; min-width: 126px; }
+  #rose-v2 .home-showcase-grid .care-note { gap: 5px 12px; padding: 18px; }
+  #rose-v2 .home-showcase-grid .care-note-icon { font-size: 30px; }
+  #rose-v2 .home-showcase-grid .care-note > div { flex-basis: auto; }
+  #rose-v2 .home-showcase-grid .care-note > a { margin: 2px 0 0; }
+  #rose-v2 .shop-discovery { align-items: stretch; }
+  #rose-v2 .shop-filters { gap: 7px; }
+  #rose-v2 .shop-filter { font-size: 14px; padding-inline: 13px; }
+  #rose-v2 .shop-filter-status { width: 100%; }
+  #rose-v2 .shop-collection-note { font-size: 14px; }
+  #rose-v2 .shop-card { min-height: 0; }
+  #rose-v2 .shop-copy { min-height: 0; }
+  #rose-v2 .product-dialog { width: calc(100% - 20px); max-height: min(92dvh, 900px); }
+  #rose-v2 .product-modal-copy { padding-bottom: 22px; }
+  #rose-v2 .product-modal-image img { height: 190px; }
+  #rose-v2 footer { padding-bottom: calc(120px + env(safe-area-inset-bottom)); }
+  #rose-v2 .rose-mobile-booking {
+    position: fixed;
+    z-index: 45;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px max(16px, env(safe-area-inset-left)) calc(12px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-right));
+    background: rgba(255, 250, 247, .97);
+    border-top: 1px solid #d9b7b6;
+    box-shadow: 0 -8px 28px rgba(60, 28, 38, .15);
+    backdrop-filter: blur(14px);
+  }
+  #rose-v2 .rose-mobile-booking-copy {
+    min-width: 0;
+    max-width: 45%;
+    color: #4d3039;
+    font: 700 14px/1.3 Arial, Helvetica, sans-serif;
+  }
+  #rose-v2 .rose-mobile-booking-copy small {
+    display: block;
+    margin-top: 4px;
+    color: #68464e;
+    font: 400 12px/1.35 Arial, Helvetica, sans-serif;
+  }
+  #rose-v2 .rose-mobile-booking > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 49px;
+    min-width: 0;
+    padding: 11px 16px;
+    border-radius: 14px;
+    background: #74404a;
+    color: #fffaf7;
+    text-decoration: none;
+    text-align: center;
+    font: 700 15px/1.3 Arial, Helvetica, sans-serif;
+  }
+  #rose-v2 .rose-mobile-booking > a:focus-visible {
+    outline: 3px solid #432630;
+    outline-offset: 3px;
+  }
+  #rose-v2.rose-booking-in-view .rose-mobile-booking,
+  #rose-v2.rose-product-dialog-open .rose-mobile-booking,
+  #rose-v2.rose-keyboard-open .rose-mobile-booking { display: none; }
+}
+@media (max-width: 360px) {
+  #rose-v2 .rose-mobile-booking { gap: 8px; }
+  #rose-v2 .rose-mobile-booking-copy { font-size: 13px; }
+  #rose-v2 .rose-mobile-booking > a { font-size: 14px; padding-inline: 12px; }
+}
+@media (max-height: 410px) and (max-width: 640px) {
+  #rose-v2 .rose-mobile-booking { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #rose-v2 .shop-card, #rose-v2 .shop-picture img { transition: none; }
+}
