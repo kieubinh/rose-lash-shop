@@ -62,3 +62,25 @@ The design-reference catalogue currently includes Lash cleanser (A$22), Soft las
 - **V5 Rose Edit:** the four existing illustrated concept products are labelled as previews and filterable by All concepts, Lash care, Beauty tools and Brows. Filter state is represented by `aria-pressed`; the count announces changes. Existing illustrative A$ prices, product detail dialog and no-checkout warning remain in place.
 - **Architecture:** `rose-v4-v5.css` layers after the base stylesheet and responsive V3 without overwriting it. `rose-v4-v5.js` layers after `app.js`. Neither `app.js`, `data/services.json` nor `api/booking.js` was changed.
 - **Regression checks:** `node --check rose-v4-v5.js` and `node --test tests/test_v4_v5.cjs`. Follow up with actual device QA at 320/360/375/390/412/430px (Android Chrome + iOS Safari), and with product-detail keyboard/VoiceOver/TalkBack checks. Do not send a real booking enquiry during smoke tests.
+
+## SEO V6 — Sydney service discovery (27 October 2026)
+
+Implemented without changing the logo, salon imagery, 26 service prices, booking enquiry, or Rose Edit concept-only products.
+
+- Homepage `h1` now includes visible "Lash extensions, brows & waxing in Sydney" supporting the Rose brand tagline.
+- Three homepage treatment categories contain descriptive links to their indexable `/lashes/`, `/brows/`, and `/waxing/` pages, while existing enquiry links remain.
+- All category landing pages now offer keyboard-accessible skip navigation and a dedicated mobile navigation bar with current-page indication.
+- The shared studio hero image uses `fetchpriority="high"` preload; the homepage preconnects to Pexels for its existing illustrative treatment imagery.
+- The canonical four-page sitemap carries accurate `lastmod` dates for this release. No extra synthetic URLs were created.
+- `tests/test_seo_v6.cjs` validates unique Sydney-oriented metadata, canonical URLs, indexability, schema, price integrity, service navigation, and sitemap consistency. The GitHub Actions workflow `rose-seo-regression.yml` checks this on pull requests and main pushes.
+- Continue to avoid FAQ rich-result promises, review markup, fake contact details, and product offer markup for illustrative Rose Edit concepts.
+
+### Actions requiring verified business ownership
+
+1. Verify the `https://rose-lash-shop.vercel.app/` URL-prefix property in Google Search Console using a supported method (typically a verified HTML file or meta tag). Do not claim indexing until Search Console reports it.
+2. Submit `https://rose-lash-shop.vercel.app/sitemap.xml`, and inspect all four canonical URLs individually for coverage/indexing.
+3. Claim or verify the legitimate Google Business Profile and align business name, street or service-area setup, contact details and hours with the actual business. Add missing LocalBusiness schema fields only after verification.
+4. Monitor Search Console clicks, impressions, CTR, query coverage and mobile Core Web Vitals before expanding content or creating suburb pages. Do not publish doorway pages for unverified suburbs.
+5. Run PageSpeed Insights and Rich Results Test on the live production domain. Validation and Search Console submission require access beyond deploying source code.
+
+Note: Vercel production readiness confirms deployment, not Google indexation, a Lighthouse score or measured organic traffic.
