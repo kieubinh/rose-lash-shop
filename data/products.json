@@ -1,0 +1,82 @@
+[
+  {
+    "id": "lash-cleanser",
+    "name": "Rose Lash Cleanser",
+    "group": "lashes",
+    "category": "Lash care",
+    "price": 22,
+    "image": "/assets/rose-lash-cleanser.svg",
+    "description": "Foaming lash cleanser concept for an everyday aftercare routine.",
+    "availability": "concept"
+  },
+  {
+    "id": "lash-brush",
+    "name": "Rose Soft Lash Brush & Spoolie",
+    "group": "tools",
+    "category": "Beauty tools",
+    "price": 12,
+    "image": "/assets/rose-lash-brush.svg",
+    "description": "Brush and spoolie concept for simple lash grooming.",
+    "availability": "concept"
+  },
+  {
+    "id": "lash-care-kit",
+    "name": "Rose Lash Aftercare Kit",
+    "group": "lashes",
+    "category": "Aftercare sets",
+    "price": 38,
+    "image": "/assets/rose-lash-care-kit.svg",
+    "description": "A coordinated lash cleanser and grooming kit concept.",
+    "availability": "concept"
+  },
+  {
+    "id": "brow-styling",
+    "name": "Rose Clear Brow Styling Gel",
+    "group": "brows",
+    "category": "Brow care",
+    "price": 20,
+    "image": "/assets/rose-brow-gel.svg",
+    "description": "Clear brow styling gel concept for an everyday defined look.",
+    "availability": "concept"
+  },
+  {
+    "id": "cleansing-brush",
+    "name": "Rose Lash Cleansing Brush",
+    "group": "tools",
+    "category": "Beauty tools",
+    "price": 8,
+    "image": null,
+    "description": "A standalone gentle cleansing brush concept.",
+    "availability": "concept"
+  },
+  {
+    "id": "satin-mask",
+    "name": "Rose Satin Sleep Mask",
+    "group": "tools",
+    "category": "Beauty accessories",
+    "price": 19,
+    "image": null,
+    "description": "Soft satin eye mask concept with a Rose-inspired finish.",
+    "availability": "concept"
+  },
+  {
+    "id": "mini-kit",
+    "name": "Rose Mini Lash Care Kit",
+    "group": "lashes",
+    "category": "Aftercare sets",
+    "price": 25,
+    "image": null,
+    "description": "Travel-friendly mini aftercare bundle concept.",
+    "availability": "concept"
+  },
+  {
+    "id": "luxury-gift-box",
+    "name": "Rose Luxury Gift Box",
+    "group": "lashes",
+    "category": "Gift ideas",
+    "price": 55,
+    "image": null,
+    "description": "Rose-inspired gift bundle concept, with final contents to be confirmed.",
+    "availability": "concept"
+  }
+]

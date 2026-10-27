@@ -22,7 +22,9 @@ jobs:
           node --check app.js
           node --check rose-v4-v5.js
           node --check api/booking.js
+          node --check rose-store.js
+          node --check api/order.js
       - name: Validate SEO, V4/V5 interactions and service catalogue
-        run: node --test tests/test_seo_v6.cjs tests/test_v4_v5.cjs
+        run: node --test tests/test_seo_v6.cjs tests/test_v4_v5.cjs tests/test_store.cjs
       - name: Check booking endpoint is fail-closed without credentials
         run: node tests/test_booking.cjs
