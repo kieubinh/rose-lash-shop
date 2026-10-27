@@ -1,0 +1,39 @@
+/* Rose service landing pages — shares the existing brand and authentic studio image. */
+body { margin:0; }
+#rose-v2.seo-page { min-height:100vh; background:#fcf5f0; }
+#rose-v2.seo-page .seo-top { background:linear-gradient(110deg,rgba(47,23,31,.92),rgba(64,33,41,.74)),url('/assets/rose-salon.jpg') center/cover; color:#fff9f4; padding:1px 0 90px; }
+#rose-v2.seo-page .seo-top .topnav { margin-bottom:85px; }
+#rose-v2.seo-page .seo-top .topnav .navlinks { gap:23px; }
+#rose-v2.seo-page .seo-top .topnav .navlinks a { font-size:11px; }
+#rose-v2.seo-page .seo-hero { max-width:850px; }
+#rose-v2.seo-page .seo-hero .eyebrow { color:#f3ccc6; }
+#rose-v2.seo-page .seo-hero h1 { font:normal clamp(45px,7vw,82px)/1.05 Georgia,serif; letter-spacing:-.045em; margin:22px 0; }
+#rose-v2.seo-page .seo-hero p { max-width:720px; font-size:17px; line-height:1.8; color:#fff0ea; margin:0 0 32px; }
+#rose-v2.seo-page .seo-hero .light-button { font-size:12px; }
+#rose-v2.seo-page .seo-breadcrumb { display:flex; gap:9px; flex-wrap:wrap; margin-bottom:30px; font-size:13px; }
+#rose-v2.seo-page .seo-breadcrumb a { color:#ffe0d7; text-decoration:underline; }
+#rose-v2.seo-page .seo-content { padding:74px 0 100px; }
+#rose-v2.seo-page .seo-content > .eyebrow { color:#9f6770; }
+#rose-v2.seo-page .seo-content h2 { font:normal clamp(33px,4vw,51px)/1.1 Georgia,serif; letter-spacing:-.035em; margin:16px 0 25px; }
+#rose-v2.seo-page .seo-content h3 { font:normal 26px/1.2 Georgia,serif; color:#5f3743; margin:0 0 12px; }
+#rose-v2.seo-page .seo-content p { font-size:16px; line-height:1.75; color:#6f5358; margin:0 0 18px; }
+#rose-v2.seo-page .seo-service-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:15px; margin:22px 0 48px; }
+#rose-v2.seo-page .seo-service { display:flex; justify-content:space-between; align-items:start; gap:18px; padding:24px; background:#fffaf7; border:1px solid #ead7d3; border-radius:17px; }
+#rose-v2.seo-page .seo-service h3 { font:normal 22px Georgia,serif; margin:0 0 8px; }
+#rose-v2.seo-page .seo-service p { font-size:14px; line-height:1.55; margin:0 0 7px; }
+#rose-v2.seo-page .seo-service small { display:block; color:#7f6469; font-size:13px; line-height:1.55; }
+#rose-v2.seo-page .seo-price { font:bold 24px Arial,sans-serif; color:#74404a; white-space:nowrap; }
+#rose-v2.seo-page .seo-content-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-bottom:40px; }
+#rose-v2.seo-page .seo-info { background:#f7e7e2; border-radius:18px; padding:28px; }
+#rose-v2.seo-page .seo-questions { display:grid; gap:12px; margin-bottom:38px; }
+#rose-v2.seo-page .seo-questions article { border-bottom:1px solid #e0ccc9; padding-bottom:17px; }
+#rose-v2.seo-page .seo-questions h3 { font-size:22px; }
+#rose-v2.seo-page .seo-other { display:flex; gap:12px; flex-wrap:wrap; }
+#rose-v2.seo-page .seo-other a { color:#74404a; border:1px solid #cba3a6; padding:12px 19px; border-radius:10px; background:#fff; font-weight:600; font-size:14px; }
+#rose-v2.seo-page .seo-bottom { padding:32px 0; background:#321e26; color:#fff4ee; }
+#rose-v2.seo-page .seo-bottom .inner { display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; }
+#rose-v2.seo-page .seo-bottom a { color:#fff4ee; text-decoration:underline; font-size:14px; }
+#rose-v2.seo-page .seo-smallprint { font-size:13px; color:#755d62; line-height:1.65; }
+#rose-v2.seo-page :is(a,button):focus-visible { outline:3px solid #efafa9; outline-offset:3px; }
+@media(max-width:900px){#rose-v2.seo-page .seo-top .topnav{margin-bottom:62px;}#rose-v2.seo-page .seo-service-list{grid-template-columns:1fr;}}
+@media(max-width:640px){#rose-v2.seo-page .seo-top{padding-bottom:62px;}#rose-v2.seo-page .seo-content{padding:54px 0 75px;}#rose-v2.seo-page .seo-hero p{font-size:16px;}#rose-v2.seo-page .seo-content-grid{grid-template-columns:1fr;}#rose-v2.seo-page .seo-service{padding:19px;gap:10px;}#rose-v2.seo-page .seo-service h3{font-size:21px;}#rose-v2.seo-page .seo-price{font-size:21px;}}
