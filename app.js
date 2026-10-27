@@ -35,22 +35,7 @@ for(const card of document.querySelectorAll('[data-featured-id]')){
  if(!svc)continue;
  const price=card.querySelector('[data-featured-price]');
  const duration=card.querySelector('[data-featured-duration]');
- if(price)price.textContent='
-const date=document.getElementById('booking-date');const now=new Date();date.min=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
-function payload(){const f=new FormData(form);return Object.fromEntries(['name','phone','email','service','date','time','notes','website'].map(key=>[key,String(f.get(key)||'').trim()]));}
-function textEnquiry(d){const found=services.find(x=>x.id===d.service);return ['Rose Lash · Brow · Wax — appointment enquiry','','Name: '+d.name,'Email: '+d.email,'Phone: '+(d.phone||'Not provided'),'Treatment: '+(found?found.name:'Not sure yet'),'Preferred date: '+(d.date||'Flexible'),'Preferred time: '+(d.time||'Flexible'),'Notes: '+(d.notes||'None'),'','Please confirm the time, location, total cost and booking details. This is not a confirmed appointment.'].join('\n');}
-function showStatus(message,kind){status.className='booking-status'+(kind?' '+kind:'');status.textContent=message;}
-async function copyEnquiry(){if(!form.reportValidity())return;const body=textEnquiry(payload());try{await navigator.clipboard.writeText(body);showStatus('Enquiry copied. Please send it through Rose’s verified contact channel; no booking has been submitted.','success');}catch{window.prompt('Copy this enquiry:',body);showStatus('Copy your enquiry and send it through Rose’s verified contact channel.');}}
-document.getElementById('booking-copy').addEventListener('click',copyEnquiry);
-form.addEventListener('submit',async (e)=>{e.preventDefault();if(!form.reportValidity())return;submitButton.disabled=true;showStatus('Checking the email service…');
- try{const response=await fetch('/api/booking',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload())});const result=await response.json();
-  if(response.ok&&result.sent){showStatus('Your enquiry has been sent to Rose. Please wait for the studio to confirm the appointment.','success');form.reset();return;}
-  if(response.status===503){showStatus('Email booking is not activated yet. Use “Copy details” and send your request through Rose’s verified contact channel.','error');return;}
-  showStatus(result.error||'The enquiry could not be sent. Please copy your details instead.','error');
- }catch{showStatus('Your enquiry has not been sent due to a network issue. Use “Copy details” instead.','error');}
- finally{submitButton.disabled=false;}
-});
-+svc.price;
+ if(price)price.textContent='$'+svc.price;
  if(duration)duration.textContent=svc.duration;
 }
 for(const link of document.querySelectorAll('[data-book-service]')){
