@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="660" viewBox="0 0 760 660" role="img" aria-label="Rose lash care gift kit conceptual product illustration"><title>Rose lash care gift kit conceptual product illustration</title><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e9c3c0"/><stop offset=".55" stop-color="#dbaba9"/><stop offset="1" stop-color="#b9757f"/></linearGradient>
+<radialGradient id="glow" cx=".24" cy=".1" r=".84"><stop stop-color="#fff8f4" stop-opacity=".85"/><stop offset="1" stop-color="#fff8f4" stop-opacity="0"/></radialGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2=".18"><stop stop-color="#fffaf7" stop-opacity=".94"/><stop offset=".25" stop-color="#fffaf7" stop-opacity=".48"/><stop offset=".75" stop-color="#ffebeb" stop-opacity=".58"/><stop offset="1" stop-color="#fff" stop-opacity=".86"/></linearGradient>
+<linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9e2dc"/><stop offset=".38" stop-color="#dca09d"/><stop offset=".7" stop-color="#e8b7b0"/><stop offset="1" stop-color="#ac6b70"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2=".15"><stop stop-color="#7d3c48"/><stop offset=".17" stop-color="#edc1b7"/><stop offset=".45" stop-color="#bb7880"/><stop offset=".68" stop-color="#ffe7da"/><stop offset="1" stop-color="#86505b"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff9f2"/><stop offset=".75" stop-color="#f7dfd4"/><stop offset="1" stop-color="#d29f96"/></linearGradient>
+<filter id="shadow" x="-40%" y="-40%" width="180%" height="200%"><feGaussianBlur stdDeviation="25"/></filter>
+<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+<filter id="object" x="-35%" y="-35%" width="170%" height="180%"><feDropShadow dx="17" dy="25" stdDeviation="15" flood-color="#5b2936" flood-opacity=".31"/></filter>
+</defs><rect width="760" height="660" fill="url(#bg)"/><rect width="760" height="660" fill="url(#glow)"/>
+<g opacity=".14" stroke="#fff2e9" stroke-width="14"><path d="M590 54V268 M483 161H698 M512 84L670 238 M670 84L512 238"/></g>
+<path d="M0 569C153 540 273 590 431 555S644 535 760 558V660H0Z" fill="#fcf4ee" opacity=".21"/>
+<ellipse cx="389" cy="585" rx="230" ry="34" fill="#6b3644" opacity=".27" filter="url(#shadow)"/>
+<g filter="url(#object)">
+<path d="M108 246L276 173L658 209L507 309Z" fill="url(#cream)" stroke="#fff6f0" stroke-width="5"/>
+<path d="M108 246L507 309L507 560L108 484Z" fill="url(#pink)" stroke="#efc3bc" stroke-width="3"/>
+<path d="M507 309L658 209V491L507 560Z" fill="#bb7c80" stroke="#f0c6c0" stroke-width="4"/>
+<path d="M139 272L491 331L624 251L263 214Z" fill="#b47680" opacity=".62"/>
+<rect x="159" y="326" width="154" height="144" rx="27" fill="#f9e8df" transform="rotate(8 230 389)"/>
+<g fill="#fff8ee" opacity=".7"><path d="M170 334C195 319 263 329 305 362L302 456Q236 473 176 445Z"/></g>
+<g transform="translate(5 0)"><rect x="363" y="338" width="103" height="146" rx="25" fill="url(#glass)" stroke="#fff8ef" stroke-width="3"/><rect x="382" y="311" width="66" height="37" rx="9" fill="#fff5eb"/><rect x="391" y="279" width="45" height="34" rx="9" fill="url(#cream)"/><text x="416" y="406" text-anchor="middle" font-family="Georgia,serif" font-size="54" font-style="italic" fill="#894b57">Rose</text></g>
+<ellipse cx="548" cy="389" rx="57" ry="36" fill="url(#metal)" stroke="#ffe8d7" stroke-width="4"/>
+<ellipse cx="548" cy="389" rx="47" ry="26" fill="#f0c7bd" opacity=".8"/>
+<text x="548" y="398" text-anchor="middle" font-size="27" font-style="italic" font-family="Georgia,serif" fill="#8a4b55">Rose</text>
+<path d="M194 511L441 547" stroke="#90505a" stroke-width="11" stroke-linecap="round"/>
+<path d="M194 511L145 502" stroke="#fff1eb" stroke-width="16" stroke-linecap="round"/>
+</g>
+<g transform="rotate(8 368 250)"><text x="373" y="272" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="65" fill="#874653">Rose</text><text x="373" y="295" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" letter-spacing="5" fill="#874653">LASH CARE KIT</text></g></svg>
