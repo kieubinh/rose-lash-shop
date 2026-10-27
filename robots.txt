@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rose-lash-shop.vercel.app/sitemap.xml
