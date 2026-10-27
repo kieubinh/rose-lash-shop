@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="660" viewBox="0 0 760 660" role="img" aria-label="Rose lash cleanser conceptual product illustration"><title>Rose lash cleanser conceptual product illustration</title><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e9c3c0"/><stop offset=".55" stop-color="#dbaba9"/><stop offset="1" stop-color="#b9757f"/></linearGradient>
+<radialGradient id="glow" cx=".24" cy=".1" r=".84"><stop stop-color="#fff8f4" stop-opacity=".85"/><stop offset="1" stop-color="#fff8f4" stop-opacity="0"/></radialGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2=".18"><stop stop-color="#fffaf7" stop-opacity=".94"/><stop offset=".25" stop-color="#fffaf7" stop-opacity=".48"/><stop offset=".75" stop-color="#ffebeb" stop-opacity=".58"/><stop offset="1" stop-color="#fff" stop-opacity=".86"/></linearGradient>
+<linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9e2dc"/><stop offset=".38" stop-color="#dca09d"/><stop offset=".7" stop-color="#e8b7b0"/><stop offset="1" stop-color="#ac6b70"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2=".15"><stop stop-color="#7d3c48"/><stop offset=".17" stop-color="#edc1b7"/><stop offset=".45" stop-color="#bb7880"/><stop offset=".68" stop-color="#ffe7da"/><stop offset="1" stop-color="#86505b"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff9f2"/><stop offset=".75" stop-color="#f7dfd4"/><stop offset="1" stop-color="#d29f96"/></linearGradient>
+<filter id="shadow" x="-40%" y="-40%" width="180%" height="200%"><feGaussianBlur stdDeviation="25"/></filter>
+<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+<filter id="object" x="-35%" y="-35%" width="170%" height="180%"><feDropShadow dx="17" dy="25" stdDeviation="15" flood-color="#5b2936" flood-opacity=".31"/></filter>
+</defs><rect width="760" height="660" fill="url(#bg)"/><rect width="760" height="660" fill="url(#glow)"/>
+<g opacity=".14" stroke="#fff2e9" stroke-width="14"><path d="M590 54V268 M483 161H698 M512 84L670 238 M670 84L512 238"/></g>
+<path d="M0 569C153 540 273 590 431 555S644 535 760 558V660H0Z" fill="#fcf4ee" opacity=".21"/>
+<ellipse cx="389" cy="585" rx="230" ry="34" fill="#6b3644" opacity=".27" filter="url(#shadow)"/>
+<g opacity=".83"><g fill="#fff9f7"><circle cx="148" cy="535" r="62"/><circle cx="100" cy="555" r="50"/><circle cx="193" cy="570" r="45"/><circle cx="259" cy="546" r="30"/><circle cx="585" cy="583" r="45"/><circle cx="651" cy="593" r="33"/></g><g fill="#fff" opacity=".55"><circle cx="121" cy="424" r="11"/><circle cx="180" cy="404" r="16"/><circle cx="225" cy="453" r="9"/><circle cx="98" cy="474" r="8"/><circle cx="268" cy="485" r="13"/></g></g>
+<g filter="url(#object)">
+<rect x="288" y="198" width="204" height="367" rx="46" fill="url(#glass)" stroke="#fff9f5" stroke-width="4"/>
+<rect x="304" y="222" width="172" height="321" rx="35" fill="url(#pink)" opacity=".7"/>
+<path d="M329 226Q322 340 326 523" stroke="white" stroke-width="12" opacity=".45" fill="none"/>
+<rect x="300" y="177" width="181" height="56" rx="18" fill="url(#cream)" stroke="#fffcf8" stroke-width="3"/>
+<rect x="344" y="129" width="98" height="64" rx="14" fill="url(#glass)" stroke="white" stroke-width="4"/>
+<rect x="360" y="98" width="65" height="42" rx="10" fill="url(#cream)"/>
+<path d="M389 102V84H460Q482 84 482 102V113H416" fill="url(#cream)" stroke="#fff6ee" stroke-width="3"/>
+<rect x="313" y="282" width="161" height="178" rx="12" fill="#fff8f2" opacity=".82"/>
+<text x="394" y="361" text-anchor="middle" font-family="Georgia,serif" font-size="54" font-style="italic" fill="#894b57">Rose</text><text x="394" y="387" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="4" fill="#9c6069">LASH CLEANSER</text>
+<text x="394" y="428" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" letter-spacing="2.5" fill="#8a515b">GENTLE FOAMING CARE</text>
+</g><g opacity=".33" fill="white"><circle cx="541" cy="230" r="8"/><circle cx="558" cy="271" r="12"/><circle cx="194" cy="258" r="9"/></g></svg>
