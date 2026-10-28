@@ -21,29 +21,26 @@ test('V4/V5 retain all 26 services and the existing enquiry backend', () => {
   assert.doesNotMatch(html, /owner-portrait/);
 });
 
-test('featured pricing, lash policy and the V4 mobile shortcut retain enquiry wording', () => {
+test('mobile shortcut keeps enquiry wording and the price list is a linked PDF, not inline content', () => {
   const html = source('index.html');
   const css = source('rose-v4-v5.css');
-  assert.equal((html.match(/data-featured-id=/g) || []).length, 3);
-  assert.match(html, /data-jump-category="Lashes" aria-label="View lash aftercare policy/);
   assert.match(html, /class="rose-mobile-booking"/);
   assert.match(html, /Enquiry only · Studio confirms/);
-  assert.match(css, /\.featured-action\s*\{/);
-  assert.match(css, /margin-top:\s*auto/);
   assert.match(css, /env\(safe-area-inset-bottom\)/);
   assert.match(css, /rose-booking-in-view/);
+  assert.ok(fs.existsSync(path.join(__dirname, '..', 'assets/rose-price-list.pdf')));
+  assert.ok((html.match(/href="\/assets\/rose-price-list\.pdf"/g) || []).length >= 3);
+  assert.doesNotMatch(html, /id="price-list"|id="treatment-list"|data-featured-id/);
 });
 
-test('four preview products have labelled filters and native dialog controls', () => {
+test('Our work shows the real photo and video with a tidy two-up layout', () => {
   const html = source('index.html');
-  const css = source('rose-v4-v5.css');
-  assert.equal((html.match(/data-shop-product=/g) || []).length, 4);
-  assert.equal((html.match(/class="shop-concept-badge"/g) || []).length, 4);
-  assert.equal((html.match(/data-edit-filter=/g) || []).length, 4);
-  assert.equal((html.match(/aria-controls="rose-product-dialog"/g) || []).length, 4);
-  assert.match(html, /Concept previews only/);
-  assert.match(html, /No checkout/);
-  assert.match(css, /\.shop-card\[hidden\]\s*\{\s*display:\s*none\s*!important/);
+  const css = source('home-simple.css');
+  assert.match(html, /<section class="work" id="work"/);
+  assert.match(html, /rose-before-after\.webp/);
+  assert.match(html, /rose-lash-brow-transformation\.mp4/);
+  assert.match(css, /\.work-photo\s*\{[^}]*flex:\s*\.75/);
+  assert.match(css, /\.work-video\s*\{[^}]*flex:\s*\.5625/);
 });
 
 test('filtering and sticky CTA runtime respond to viewport, keyboard and dialog changes', () => {

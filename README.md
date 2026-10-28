@@ -94,3 +94,10 @@ Note: Vercel production readiness confirms deployment, not Google indexation, a 
 - Verify `RESEND_API_KEY`, `ROSE_BOOKING_FROM_EMAIL`, `ROSE_BOOKING_TO_EMAIL` are set (already used by bookings). The new endpoint intentionally fails closed otherwise.
 - **Before activating real sales:** confirm suppliers, actual goods/packaging and labels, product safety and Australian requirements, final prices incl GST as applicable, stock/SKUs, ABN/contact details, delivery and returns policies; then add a secure Stripe Checkout or Shopify checkout with stock/order persistence, signed payment webhooks and fulfilment notifications. Do not call these enquiries paid or confirmed sales.
 - Run `node --check rose-store.js`, `node --check api/order.js`, `node --test tests/test_store.cjs` and prior regressions.
+
+## Simplified homepage and price list (Oct 2026)
+- The homepage is now: hero, three service cards, **Our work** (real before/after photo + video), studio, booking enquiry and footer. The tabbed 26-service menu, "Popular treatments" stock-photo cards and the Rose Edit concept shop were removed from the page to keep it simple.
+- The full price list is a PDF at `assets/rose-price-list.pdf`, linked from the nav, hero, services section, footer and the three category pages. It is generated from `data/services.json`: after any price change run `python3 scripts/build_price_list.py` (needs Google Chrome) and commit the new PDF. Lash policy notes in the PDF live in that script.
+- `app.js` keeps its own copy of the 26 services for the booking form's treatment dropdown; keep it in sync with `data/services.json`.
+- `rose-store.js`, `rose-store.css`, `api/order.js` and `data/products.json` remain in the repo but are no longer loaded by the homepage. Restore the old section from git history if the shop returns.
+- Layout overrides for the simplified page are in `home-simple.css`, loaded last.

@@ -56,13 +56,8 @@ test('provider email uses catalogue-derived pricing, never browser price',async(
   for(const k in original)if(original[k]===undefined)delete process.env[k];else process.env[k]=original[k];
  }
 });
-test('homepage layers store UI without changing four legacy product cards or booking',()=>{
+test('homepage is simplified: concept shop removed, booking enquiry and API kept',()=>{
  const html=src('index.html');
- assert.match(html,/rose-store\.css/);assert.match(html,/rose-store\.js/);
- assert.match(src('app.js'),/api\/booking/);assert.match(html,/rose-product-dialog/);
- assert.equal((html.match(/data-shop-product=/g)||[]).length,4);
- const client=src('rose-store.js');
- assert.match(client,/\/api\/order/);
- assert.match(client,/Request availability/);
- assert.match(client,/No payment is collected here/);
+ assert.doesNotMatch(html,/rose-store\.(css|js)/);assert.doesNotMatch(html,/data-shop-product=/);assert.doesNotMatch(html,/rose-product-dialog/);
+ assert.match(src('app.js'),/api\/booking/);assert.match(html,/id="booking-form"/);
 });
