@@ -44,6 +44,15 @@ module.exports = async function handler(req,res){
       console.error('Rose booking: Resend rejected request', {status:apiResponse.status,kind:errorKind});
       return respond(res,502,{error:'Email service unavailable. Please copy your enquiry instead.'});
     }
+    // Best-effort receipt: a failed receipt must never turn a delivered enquiry into an error.
+    const first=name.split(/\s+/)[0];
+    const summary=found?found.name+(date?' · '+date:'')+(time?' · '+time:''):'your enquiry';
+    const lead='We received your enquiry. This is not a confirmed booking yet. The studio will reply by email to confirm availability.';
+    try{
+      await fetch('https://api.resend.com/emails',{method:'POST',headers:{Authorization:'Bearer '+apiKey,'Content-Type':'application/json'},body:JSON.stringify({from,to:[email],reply_to:to,subject:'We received your enquiry · Rose',
+        html:'<p>Hi '+safe(first)+',</p><p>'+lead+'</p><p><strong>Your enquiry:</strong> '+safe(summary)+'</p><p>You can reply to this email if anything changes.</p><p>Rose · Lash · Brow · Wax</p>',
+        text:'Hi '+first+',\n\n'+lead+'\n\nYour enquiry: '+summary+'\n\nYou can reply to this email if anything changes.\n\nRose · Lash · Brow · Wax'})});
+    }catch{}
     return respond(res,200,{sent:true,message:'Enquiry submitted; appointment subject to confirmation.'});
   }catch{return respond(res,502,{error:'Could not reach the email service. Please copy your enquiry instead.'});}
 };
