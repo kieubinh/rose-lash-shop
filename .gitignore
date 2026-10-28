@@ -1,0 +1,9 @@
+.vercel/
+.env*
+!.env.example
+node_modules/
+public/
+rose-glass-site/
+.agents/
+skills-lock.json
+.DS_Store
