@@ -1,0 +1,11 @@
+#rose-v2 .work { padding:88px 0; background:#f9eee9; }
+#rose-v2 .work-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; align-items:start; margin-top:40px; }
+#rose-v2 .work figure { margin:0; }
+#rose-v2 .work img,
+#rose-v2 .work video { display:block; width:100%; height:auto; border-radius:22px; background:var(--blush); box-shadow:0 18px 44px rgba(75,44,52,.16); }
+#rose-v2 .work figcaption { margin-top:14px; color:#765f64; font-size:13px; line-height:1.5; }
+#rose-v2 .work-note { margin-top:26px; color:#765f64; font-size:12px; }
+@media (max-width:640px) {
+  #rose-v2 .work { padding:56px 0; }
+  #rose-v2 .work-grid { grid-template-columns:1fr; gap:22px; margin-top:28px; }
+}
