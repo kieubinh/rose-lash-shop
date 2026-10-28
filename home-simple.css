@@ -1,0 +1,67 @@
+/* Simplified homepage: loaded last, so these rules win over the earlier layers. */
+
+/* Hero: no ribbon any more, so it can be shorter. */
+#rose-v2 .hero { min-height:0; }
+#rose-v2 .hero-body { min-height:540px; padding-bottom:40px; }
+#rose-v2 .hero-copy p { max-width:420px; }
+
+/* Services: three calm cards and one price list link. */
+#rose-v2 .treatments { padding-bottom:20px; }
+#rose-v2 .treatment-card { min-height:0; }
+#rose-v2 .treatment-card h3 { margin:34px 0 12px; }
+#rose-v2 .treatment-card p { min-height:0; margin-bottom:6px; }
+#rose-v2 .treatment-card .seo-category-link { margin-top:auto; padding-top:18px; }
+#rose-v2 .pricelist-link { display:flex; align-items:center; justify-content:space-between; gap:18px; margin-top:17px; padding:22px 28px; border:1px solid rgba(179,111,120,.35); border-radius:22px; background:rgba(255,255,255,.55); color:var(--wine); transition:background .2s; }
+#rose-v2 .pricelist-link:hover { background:#fff; }
+#rose-v2 .pricelist-link strong { display:block; font:normal 26px Georgia,serif; letter-spacing:-.03em; }
+#rose-v2 .pricelist-link small { color:#80696b; font-size:13px; }
+#rose-v2 .pricelist-link b { font:normal 26px Georgia,serif; color:#a5737a; }
+
+/* Our work: copy on the left, photo and video side by side at the same height. */
+#rose-v2 .work { padding:96px 0; background:#f9eee9; }
+#rose-v2 .work-layout { display:grid; grid-template-columns:minmax(0,.75fr) minmax(0,1.6fr); gap:64px; align-items:center; }
+#rose-v2 .work-copy .eyebrow { color:#a96a73; }
+#rose-v2 .work-copy h2 { font-size:clamp(46px,5vw,68px); line-height:1.04; letter-spacing:-.045em; margin:18px 0 16px; }
+#rose-v2 .work-copy h2 em { color:#ae7079; font-weight:400; }
+#rose-v2 .work-copy p { color:#80696b; font-size:15px; line-height:1.7; max-width:340px; }
+#rose-v2 .work-copy .dark-button { display:inline-flex; margin-top:26px; }
+#rose-v2 .work-copy .work-note { margin-top:22px; font-size:12px; color:#8d767a; }
+/* Flex weights equal each media item's aspect ratio, so both end up the same height. */
+#rose-v2 .work-media { display:flex; gap:18px; align-items:flex-start; }
+#rose-v2 .work-photo { flex:.75 1 0; min-width:0; margin:0; }
+#rose-v2 .work-video { flex:.5625 1 0; min-width:0; margin:0; }
+#rose-v2 .work-media img,
+#rose-v2 .work-media video { display:block; width:100%; height:auto; object-fit:cover; border-radius:22px; background:var(--blush); box-shadow:0 18px 44px rgba(75,44,52,.16); }
+#rose-v2 .work-photo img { aspect-ratio:3/4; }
+#rose-v2 .work-video video { aspect-ratio:9/16; }
+#rose-v2 .work-media figcaption { margin-top:12px; color:#765f64; font-size:12px; line-height:1.5; }
+
+@media (max-width:900px) {
+  #rose-v2 .work { padding:64px 0; }
+  #rose-v2 .work-layout { grid-template-columns:1fr; gap:30px; }
+  #rose-v2 .work-copy p { max-width:none; }
+}
+/* Phones: swipeable row, the next item peeks in to hint there is more. */
+@media (max-width:640px) {
+  #rose-v2 .treatment-card { padding:22px 22px 20px; }
+  #rose-v2 .treatment-card h3 { margin:14px 0 8px; font-size:32px; }
+  #rose-v2 .treatment-card .seo-category-link { padding-top:10px; }
+  #rose-v2 .pricelist-link { padding:18px 20px; }
+  #rose-v2 .work-media { gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; margin:0 -18px; padding:0 18px 6px; scrollbar-width:none; }
+  #rose-v2 .work-media::-webkit-scrollbar { display:none; }
+  #rose-v2 .work-photo,
+  #rose-v2 .work-video { flex:0 0 74%; scroll-snap-align:center; }
+}
+
+/* Studio: one section; the extra "welcoming space" block is gone. */
+
+/* Booking: a single centred card now that it no longer shares a row with other blocks. */
+#rose-v2 .booking-wrap { display:block; max-width:860px; margin:72px auto; }
+#rose-v2 .booking-wrap .booking { padding:38px 34px; }
+@media (max-width:640px) {
+  #rose-v2 .booking-wrap { margin:40px auto; }
+  #rose-v2 .booking-wrap .booking { padding:24px 16px; }
+}
+
+/* Footer: three columns instead of four. */
+@media (min-width:901px) { #rose-v2 footer .footer-grid { grid-template-columns:1.5fr 1fr 1.3fr; } }
